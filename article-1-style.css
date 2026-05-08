@@ -11,7 +11,7 @@
 header {
   height: 128px;
   width: 100%;
-  background-color: rgba(78, 164, 135, 1);
+  background-color: var(--font-color-title);
   
 }
 
@@ -19,7 +19,7 @@ h1{
   font-size: 64px;
   font-family: 'Arima';
   font-weight: 700;
-  color: rgba(241, 201, 83, 1);
+  color: var(--font-color-h1);
 }
 
 h2{
