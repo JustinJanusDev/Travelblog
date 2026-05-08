@@ -1,0 +1,410 @@
+/* Allgemeine Einstellungen*/
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+ul li::marker {
+  font-size: 12px;
+}
+
+ol li::marker {
+  font-size: 20px;
+}
+
+/* Überschrift für Artikel 2 */
+.headline_arttwo {
+  display: flex;
+  padding: 48px max(calc(50% - 720px), 120px);
+  gap: 26px;
+  margin-top: 80px;
+}
+
+.headlines {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.headlines > h2 {
+  font-size: 40px;
+  color: rgb(78, 164, 135);
+}
+
+.headlines > h3 {
+  font-size: 64px;
+  color: rgb(241, 201, 83);
+}
+
+.headlines > p {
+  font-size: 28px;
+  color: rgb(84, 55, 13);
+}
+
+/* Leiste mit Symbolen für Nebeninformationen */
+.website_info {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  padding-top: 40px;
+}
+
+.info_blockone {
+  display: flex;
+  gap: 32px;
+}
+
+.info_blocktwo {
+  display: flex;
+  gap: 32px;
+}
+
+.website_info p {
+  color: rgb(84, 55, 13);
+}
+
+.info {
+  display: flex;
+  gap: 6px;
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+}
+
+.calendar > img {
+  height: 18px;
+}
+
+.glasses {
+  display: flex;
+  align-items: center;
+}
+
+.glasses > img {
+  height: 7px;
+}
+
+.eyes {
+  display: flex;
+  align-items: center;
+}
+
+.eyes > img {
+  height: 14px;
+}
+
+.share_green {
+  display: flex;
+  align-items: center;
+}
+
+.share_green > img {
+  height: 18px;
+}
+
+/* Informationen zum Author */
+.author_info {
+  background-color: rgba(78, 164, 135, 0.2);
+  color: rgb(84, 55, 13);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 30px;
+  padding: 16px;
+  width: 450px;
+}
+
+.author_info > img {
+  width: 120px;
+  margin-bottom: 16px;
+}
+
+.author_info > h2 {
+  font-size: 18px;
+}
+
+.author_info > h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.teaser {
+  font-size: 24px;
+  padding: 0px max(calc(50% - 720px), 120px);
+}
+
+/* Maincontent der Seite */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 80px;
+}
+
+/* Video */
+iframe {
+  margin: 88px 135px;
+}
+
+/* Texte */
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0px max(calc(50% - 720px), 120px);
+}
+
+li > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(78, 164, 135);
+}
+
+.proTipps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(78, 164, 135);
+  color: rgb(241, 201, 83);
+  font-size: 28px;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 10px;
+  width: 180px;
+  transform: rotate(-14deg) translateY(30px) translateX(-65px);
+}
+
+.sorted_list {
+  background-color: rgba(78, 164, 135, 0.2);
+  padding: 26px 16px;
+  border-radius: 30px;
+}
+
+/* Werbung für sich selbst */
+.sharing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(84, 55, 13);
+  font-size: 24px;
+  margin-top: 56px;
+}
+
+.sharing > p {
+  text-align: center;
+  width: 500px;
+}
+
+.arrow_big {
+  height: 65px;
+  transform: translateX(-150px) translateY(25px) scaleX(1.2) scaleY(1.2);
+}
+
+.arrow_small {
+  display: none;
+  transform: translateX(-125px) translateY(20px);
+}
+
+.share_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 24px;
+  border-radius: 40px;
+  background-color: rgb(78, 164, 135);
+  color: rgb(241, 201, 83);
+}
+
+/* Responsive */
+@media screen and (min-width: 1441px) {
+  .headline_arttwo {
+    padding: 48px max(calc(50% - 720px), 120px);
+  }
+
+  .teaser {
+    padding: 0px max(calc(50% - 720px), 120px);
+  }
+
+  .description {
+    padding: 0px max(calc(50% - 720px), 120px);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .headline_arttwo {
+    padding: 48px max(calc(50% - 720px), 64px);
+  }
+
+  .headlines > h2 {
+    font-size: 20px;
+  }
+
+  .headlines > h3 {
+    font-size: 40px;
+  }
+
+  .headlines > p {
+    font-size: 18px;
+  }
+
+  .website_info {
+    gap: 16px;
+  }
+
+  .info_blockone {
+    gap: 16px;
+  }
+
+  .info_blocktwo {
+    gap: 16px;
+  }
+
+  .author_info > h2 {
+    font-size: 16px;
+  }
+
+  .author_info > h3 {
+    font-size: 16px;
+  }
+
+  .teaser {
+    padding: 0px max(calc(50% - 720px), 64px);
+  }
+
+  .teaser > p {
+    font-size: 16px;
+  }
+
+  main {
+    font-size: 16px;
+  }
+
+  iframe {
+    width: 650px;
+    height: 375px;
+  }
+
+  .description {
+    padding: 0px max(calc(50% - 720px), 64px);
+  }
+
+  .proTipps > p {
+    font-size: 28px;
+  }
+
+  .sharing > p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 850px) {
+  .website_info {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .headline_arttwo {
+    flex-direction: column;
+    padding: 24px max(calc(50% - 720px), 16px) 40px max(calc(50% - 720px), 16px);
+    gap: 24px;
+  }
+
+  .headline_arttwo {
+    align-items: center;
+  }
+
+  .headlines > h2 {
+    font-size: 20px;
+  }
+
+  .headlines > h3 {
+    font-size: 40px;
+  }
+
+  .headlines > p {
+    font-size: 18px;
+  }
+
+  .website_info {
+    flex-direction: column;
+    font-size: 12px;
+    padding-top: 24px;
+    gap: 8px;
+  }
+
+  .info_blockone {
+    gap: 16px;
+  }
+
+  .info_blocktwo {
+    gap: 16px;
+  }
+
+  .author_info {
+    width: unset;
+  }
+
+  .author_info > h2 {
+    font-size: 16px;
+  }
+
+  .author_info > h3 {
+    font-size: 16px;
+  }
+
+  .teaser {
+    padding: 0px max(calc(50% - 720px), 16px);
+  }
+
+  .teaser > p {
+    font-size: 16px;
+  }
+
+  main {
+    font-size: 16px;
+  }
+
+  iframe {
+    width: 320px;
+    height: 185px;
+  }
+
+  .description {
+    padding: 0px max(calc(50% - 720px), 16px);
+    gap: 24px;
+  }
+
+  .proTipps {
+    transform: rotate(-14deg) translateX(10px) translateY(30px);
+  }
+
+  .proTipps > p {
+    font-size: 28px;
+  }
+
+  .arrow_big {
+    display: none;
+  }
+
+  .arrow_small {
+    display: unset;
+  }
+
+  .sharing {
+    margin-top: 8px;
+  }
+
+  .sharing > p {
+    width: unset;
+    font-size: 18px;
+  }
+}
