@@ -29,7 +29,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    border: 10px solid blue;
+    /* border: 10px solid blue; */
 }
 
 
@@ -45,7 +45,7 @@ body {
     gap: 4vw;
     padding: 32px 5vw;
 
-    border: 10px solid black;
+    /* border: 10px solid black; */
 }
 
 /* .header img {
@@ -107,21 +107,21 @@ body {
 
 .herobackgroundImage{
     background-image: url(./assets/img/HeroBackgroundImage.jpg);
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .heroBackgroundImageCoverOne{
     background-image: url(./assets/img/HeroBackgroundImageCoverOne.png);
     width: 942px;
     height: 100%;
-    border: 1px dotted green;
+    /* border: 1px dotted green; */
 }
 
 .heroBackgroundImageCoverTwo{
     background-image: url(./assets/img/HeroBackgroundImageCoverTwo.png);
     width: 647px;
     height: 540px;
-    border: 1px double red;
+    /* border: 1px double red; */
 }
 
 .HeroText{
@@ -251,14 +251,14 @@ body {
     margin: 0 auto;
     gap: 120px;
 
-    border: 10px solid red;
+    /* border: 10px solid red; */
 }
 
 .highlights {
     width: 100%;
     max-width: 979px;
 
-    border: 5px solid black;
+    /* border: 5px solid black; */
 }
 
 .highlightsHeadline {
