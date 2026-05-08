@@ -1,6 +1,7 @@
-html {
-  box-sizing: border-box;
+* {
   margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -9,9 +10,31 @@ header {
   background-color: rgba(78, 164, 135, 1);
 }
 
+h1{
+  font-size: 64px;
+}
+
+h2{
+  font-size: 40px;
+}
+
 .landing-section {
+  padding-top: 80px;
+  /* dev ist zu löschen */
+  padding-bottom: 80px;
   display: flex;
   justify-content: space-between;
+}
+
+.headline{
+  width: 902px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.headline > p{
+  font-size: 32px;
 }
 
 .fact-list {
@@ -59,6 +82,25 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 16px;
+}
+
+.author-name{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+
+}
+
+.author-title{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.author-subtitle{
+  font-size: 18px;
+  text-align: center;
 }
 
 footer {
