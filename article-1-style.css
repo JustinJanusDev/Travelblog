@@ -1,3 +1,7 @@
+
+
+
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -8,14 +12,21 @@ header {
   height: 128px;
   width: 100%;
   background-color: rgba(78, 164, 135, 1);
+  
 }
 
 h1{
   font-size: 64px;
+  font-family: 'Arima';
+  font-weight: 700;
+  color: rgba(241, 201, 83, 1);
 }
 
 h2{
   font-size: 40px;
+  font-family: 'Palanquin';
+  font-weight: 600;
+  color: rgba(78, 164, 135, 1);
 }
 
 .landing-section {
@@ -35,6 +46,8 @@ h2{
 
 .headline > p{
   font-size: 32px;
+  font-family: 'Palanquin';
+  font-weight: 400;
 }
 
 .fact-list {
