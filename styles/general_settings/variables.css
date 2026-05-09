@@ -1,0 +1,11 @@
+:root {
+    --font-color-links: rgb(248, 245, 235);
+    --font-color-title: rgb(78, 164, 135);
+    --font-color-h1: rgb(241, 201, 83);
+    --font-color-introduction: rgb(84, 55, 13);
+    --font-color-text: rgb(61, 61, 61);
+
+
+    --background-color-header-footer: rgb(78, 164, 135);
+    --background-color-biography: rgba(78, 164, 135, 0.2);
+}
