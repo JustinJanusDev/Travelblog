@@ -28,37 +28,58 @@
         width: 1440px;
         height: 533px;
 
-        background-color: #f1c953;
+        background-image: url(./assets/img/hero\ web.png);
+        background-size: cover;
+        background-position: center;
       }
 
-      .headline {
+      /*.headline {
         width: 788px;
         height: 208px;
-        /*top: 75px;*/
-       /* left: 326px;*/
-        gap: 32px;
-
-        position: relative;
+        top: 144px;
+        left: 326px;
 
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
+        background-color: #f1c953;
+      }*/
+
+      .text {
+        margin: 0;
+        padding: 0;
+
+        position: relative;
+
+        width: 345px;
+        height: 227px;
+        /*top: 144px;*/
+       /* left: 557.24px;*/
+        gap: 32px;
+       
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #f1c953;
+
+        
       }
 
       h1 {
         margin: 0;
         padding: 0;
 
+        position: absolute;
+
         width: 345px;
         height: 63px;
-        top: 117px;
-        left: 175px;
-
-        position: relative;
-
-        z-index: 1;
+        top: 117px
+        /*left: 175px;*/;
 
         font-family: Arima;
         font-weight: 700;
@@ -68,6 +89,10 @@
 
         color: #54370d;
 
+        z-index: 2;
+        
+        opacity: 0;
+
         animation: moveUp 1s ease forwards;
         animation-delay: 1s;
         
@@ -76,28 +101,25 @@
       @keyframes moveUp {
         from {
           top: 117px;
-          opacity: 1;
+          opacity: 0;
         }
 
         to {
-          top: 0px;
+          top: -32px;
           opacity: 1;
         }
-        
       }
 
       span {
         margin: 0;
         padding: 0;
 
+        position: absolute;
+
+
         width: 345px;
         height: 132px;
-        /*top: 75px;
-        left: 326px;*/
-
-        position: relative;
-
-        z-index: 2;
+        top: 75px;
 
         font-family: palanquin;
         font-weight: 500;
@@ -105,36 +127,22 @@
         line-height: 110.00000000000001%;
         letter-spacing: 0%;
 
+        z-index: 1;
+
         color: #54370d;
+
+        opacity: 0;
+
+        animation: fadeIn 1s ease-out forwards;
+        animation-delay: 2s;
       }
 
-      .rectangle {
-        margin: 0;
-        padding: 0;
-
-        width: 788px;
-        height: 133px;
-        top: 75px;
-        /*left: 326px;*/
-
-        position: absolute;
-
-        z-index: 3;
-
-        background-color: #f1c953;
-
-        animation: movedown 1s ease forwards;
-        animation-delay: 1s;
-      }
-
-      @keyframes movedown {
+      @keyframes fadeIn {
         from {
-          top: 75px;
-          opacity: 1;
+          opacity: 0;
         }
 
         to {
-          top: 200px;
           opacity: 1;
         }
       }
@@ -145,13 +153,15 @@
     <header></header>
     <div class="hero">
       <div class="headline">
-        <h1>Cappadocia</h1>
-        <span>
-          From sunrise balloons to<br />
-          hidden cave dwellings, every moment feels unrea<br />
-          in the best way.
-        </span>
-        <div class="rectangle"></div>
+        <div class="text">
+          <h1>Cappadocia</h1>
+          <span>
+            From sunrise balloons to<br />
+            hidden cave dwellings, every moment feels unrea<br />
+            in the best way.
+          </span>
+        </div>
+        <div class="vector"></div>
       </div>
     </div>
   </body>
