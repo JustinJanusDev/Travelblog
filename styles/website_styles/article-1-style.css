@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 128px;
+  width: 100%;
+  background-color: var(--font-color-title);
+}
+
+h1 {
+  font-size: 64px;
+  font-family: "Arima";
+  font-weight: 700;
+  line-height: 1;
+  color: var(--font-color-h1);
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "Palanquin";
+  font-weight: 600;
+  color: rgba(78, 164, 135, 1);
+}
+
+.landing-section {
+  padding-top: 80px;
+  /* dev ist zu löschen */
+  padding-bottom: 80px;
+  padding-left: 120px;
+  padding-right: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headline {
+  width: 902px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.headline > p {
+  font-size: 32px;
+  font-family: "Palanquin";
+  font-weight: 400;
+  line-height: 1;
+  color: var(--font-color-introduction);
+}
+
+.fact-list {
+  font-size: 16px;
+  font-family: "Palanquin";
+  font-weight: 400;
+  color: var(--font-color-introduction);
+  display: flex;
+  gap: 32px;
+}
+
+.fact {
+  display: flex;
+  gap: 6px;
+
+  align-items: center;
+}
+
+.fact-calender {
+  height: 16px;
+  width: 18px;
+}
+
+.fact-eyeglasses {
+  height: 7px;
+  width: 20px;
+}
+
+.fact-visibility {
+  height: 14px;
+  width: 20px;
+}
+
+.fact-share {
+  height: 18px;
+  width: 16px;
+}
+
+.author {
+  background-color: rgba(78, 164, 135, 0.2);
+  border-radius: 30px;
+  width: 272px;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.author-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.author-title {
+  font-size: 18px;
+  font-family: "Arima";
+  font-weight: 700;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--font-color-introduction);
+  text-align: center;
+
+}
+
+.author-subtitle {
+  font-size: 18px;
+  font-family: "Arima";
+  font-weight: 400;
+  line-height: 1;
+  color: var(--font-color-introduction);
+  text-align: center;
+}
+
+.author-text{
+  font-size: 18px;
+  font-family: "Palanquin";
+  font-weight: 400;
+  line-height: 1;
+  color: var(--font-color-introduction);
+
+}
+
+footer {
+  height: 152px;
+  width: 100%;
+  background-color: rgba(78, 164, 135, 1);
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    padding-left: max(120px, calc(50% - 720px));
+    padding-right: max(120px, calc(50% - 720px));
+  }
+}
