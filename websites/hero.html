@@ -26,13 +26,75 @@
         flex-direction: column;
 
         width: 1440px;
-        height: 533px;
+        height: 515px;
 
-        background-image: url(/Travelblog/assets/img/hero_animation/hero_web.png);
+        background-image: url(/Travelblog/assets/img/hero_animation/HeroBackgroundImage.jpg);
         background-size: cover;
         background-position: center;
+
       }
 
+      .vector {
+        margin: 0;
+        padding: 0;
+
+        position: absolute;
+
+        width: 1440px;
+        height: 547px;
+
+        background-image: url(/Travelblog/assets/img/hero_animation/hero_web.png) ;
+        background-size: cover;
+        background-position: center;
+
+       opacity: 1;
+
+        animation: fadtoleft 1s linear forwards;
+        animation-delay: 3s;
+      }
+      @keyframes fadtoleft {
+        from {
+          opacity: 1;
+          transform:translateX(0%);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateX(-100%);
+        }
+      }
+
+      .vector1 {
+        margin: 0;
+        padding: 0;
+
+        position: absolute;
+
+        width: 942px;
+        height: 515px;
+
+        background-image: url(/Travelblog/assets/img/hero_animation/HeroBackgroundImageCoverOne.png);
+        background-size: cover;
+        background-position: center;
+
+        opacity: 1;
+
+        animation: sideIn 1s ease-out forwards;
+        animation-delay: 3s;
+        
+      }
+
+      @keyframes sideIn {
+        from {
+          opacity: 1;
+          transform: translateX(100%);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateX(-30%);
+        }
+      }
       /*.headline {
         width: 788px;
         height: 208px;
@@ -67,9 +129,24 @@
 
         background-color: #f1c953;
 
-        
+        opacity: 1;
+
+        animation: sideIntext 1s linear forwards;
+        animation-delay: 3s;
+
+        z-index: 1;
       }
 
+      @keyframes sideIntext {
+        from {
+          transform: translateX(0%);
+        }
+
+        to {
+          transform: translateX(-100%);
+        }
+      }
+      
       h1 {
         margin: 0;
         padding: 0;
@@ -152,7 +229,7 @@
   <body>
     <header></header>
     <div class="hero">
-      <div class="headline">
+      <!--<div class="headline"></div>-->
         <div class="text">
           <h1>Cappadocia</h1>
           <span>
@@ -161,8 +238,13 @@
             in the best way.
           </span>
         </div>
-        <div class="vector"></div>
-      </div>
+        <div class="vector">
+          
+          </div>
+          <div class="vector1">
+
+          </div>
+        </div>
     </div>
   </body>
 </html>
