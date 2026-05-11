@@ -3,7 +3,7 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: "Palanquin";
-  line-height: 110%;
+  line-height: 120%;
 }
 
 ul li::marker {
@@ -120,7 +120,7 @@ ol li::marker {
   text-align: center;
   border-radius: 30px;
   padding: 16px;
-  width: 450px;
+  max-width: 32ch;
 }
 
 .author_info > img {
@@ -321,10 +321,6 @@ li > a {
     padding: 0px max(calc(50% - 720px), 64px);
   }
 
-  .proTipps > p {
-    font-size: 28px;
-  }
-
   .sharing > p {
     font-size: 18px;
   }
@@ -410,10 +406,6 @@ li > a {
 
   .proTipps {
     transform: rotate(-14deg) translateX(10px) translateY(30px);
-  }
-
-  .proTipps > p {
-    font-size: 28px;
   }
 
   .arrow_big {
