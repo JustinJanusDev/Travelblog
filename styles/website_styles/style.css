@@ -453,6 +453,239 @@ input[type="radio"] {
     border: 3px solid black;
 }
 
+
+.faq-title {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+}
+
+
+    .faq-title > h2 {
+        font-family: 'Arima';
+            font-size: 52px;
+            font-weight: 700;
+
+        color: rgb(78, 164, 135);
+    }
+
+
+    .faq-title > img {
+        width: 48px;
+        height: 48px;
+    }
+
+
+.landing-drop-down {
+    display: flex;  
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 32px;
+
+    margin-top: 48px;
+    margin-bottom: 56px;
+}
+
+
+    .accordion {
+        border-radius: 12px;
+        padding: 16px 14px;
+
+        background-color: rgb(241, 201, 83);
+
+        font-family: 'Palanquin';
+            font-size: 24px;
+            font-weight: 600;
+    }
+
+
+    summary {
+        list-style: none;
+        width: 1200px;
+
+        display: flex;
+            justify-content: space-between;
+            align-items: center;
+    }
+
+
+        .accordion > p {
+            padding: 4px 10px;
+            margin-top: 8px;
+
+            border-radius: 5px;
+
+            background-color: white;
+
+            font-family: 'Palanquin';
+                font-size: 16px;
+                font-weight: 500;
+        }
+
+
+            details:open {
+                width: 1230px;
+            }
+
+        
+        summary > img:hover {
+            cursor: pointer;
+        }
+
+
+            .arrow-button {
+                width: 24px;
+            }
+
+
+                details:open .arrow-button {
+                    transform: rotate(-180deg);
+                    transition-duration: 500ms;
+                }
+
+
+
+.contact-fields {
+    padding-bottom: 24px;
+}
+
+
+    .contact-title {
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+    }
+
+
+        .contact-title > h2 {
+            font-family: 'Arima';
+                font-size: 52px;
+                font-weight: 700;
+
+            color: rgb(78, 164, 135);
+        }
+
+
+    .formular-information {
+        text-align: center;
+    }
+
+
+        .name {
+            display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+            width: 530px;
+            margin: 0 auto;
+        }
+
+
+        .e-mail {
+            display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+            width: 530px;
+            margin: 0 auto;
+        }
+
+
+            .formular-box {
+                display: flex;
+                    justify-content: space-between;
+
+                width: 1100px;
+                margin: 0 auto;
+                padding: 64px 0;
+            }
+
+
+        .support {
+            display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+            width: 1100px;
+            margin: 0 auto;
+            padding-bottom: 16px;
+        }
+
+
+        input {
+            border: none;
+            border-bottom: 1px solid rgba(84, 55, 13, 1);
+
+            height: 32px;
+        }
+
+
+        .policy {
+            display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+
+            padding-bottom: 32px;
+        }
+
+
+            .policy > p, a {
+                font-family: 'Palanquin';
+                    font-size: 16px;
+                    font-weight: 400;
+            }
+
+
+                .policy p {
+                    color: rgba(84, 55, 13, 1);
+                }
+
+
+                .policy a {
+                    color: rgb(78, 164, 135);
+                }
+
+
+            .policy input {
+                accent-color: rgb(78, 164, 135);
+            }
+
+        
+        .send-button {
+            display: flex;
+                justify-content: center;
+        }
+
+
+            button {
+                border-radius: 40px;
+                border-color: rgb(115, 115, 115);
+
+                padding: 10px 24px;
+
+                font-family: 'Arima';
+                    font-size: 24px;
+                    font-weight: 700;
+
+                    background-color: white;
+                    color: rgb(115, 115, 115);
+            }
+
+
+                .concluding-section {
+                    display: flex;
+                        flex-direction: column;
+                        gap: 32px;
+
+                    margin-bottom: 120px;
+                }
+
+
+
 .footer {
     width: 100%;
     height: 152px;
