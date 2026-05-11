@@ -223,6 +223,10 @@
     margin-bottom: 12px;
 }
 
+.author_info>p {
+    text-align: left;
+}
+
 .teaser {
     font-size: 24px;
     /* padding: 0px max(calc(50% - 720px), 120px); */
@@ -491,26 +495,22 @@ main h2 {
         font-size: 16px;
     }
 
-    .teaser {
+    /* .teaser {
         padding: 0px max(calc(50% - 720px), 64px);
-    }
+    } */
 
-    .teaser>p {
+    /* .teaser>p {
         font-size: 16px;
+    } */
+
+    main p{
+        font-size: 18px;
     }
 
-    main {
-        font-size: 16px;
+    .teaser p{
+        font-size: 18px;
     }
 
-    iframe {
-        width: 650px;
-        height: 375px;
-    }
-
-    .proTipps>p {
-        font-size: 28px;
-    }
 
     .sharing>p {
         font-size: 18px;
@@ -518,11 +518,11 @@ main h2 {
 }
 
 @media screen and (min-width: 768px) {
-    .main {
+    /* .main {
         width: 100%;
         max-width: 1200px;
         align-items: center;
-    }
+    } */
 
 
     .footerMobile {
