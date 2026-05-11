@@ -457,11 +457,12 @@ main h2 {
     width: 32px;
 }
 
-.footerStand{
+/* .footerStand{
     width: 100%;
     max-width: 100%;
     height: 112px;
-}
+    display: none;
+} */
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
 
@@ -549,9 +550,9 @@ main h2 {
         max-width: 1200px;
         align-items: center;
     } */
-    .footerStand{
+    /* .footerStand{
         display: none;
-    }
+    } */
 
     .footerMobile {
         display: none;
@@ -565,6 +566,10 @@ main h2 {
 }
 
 @media screen and (max-width: 767px) {
+    body{
+        padding-bottom: 88px;
+    }
+    
     .headlineWrapper {
         width: 100%;
         display: flex;
@@ -663,6 +668,8 @@ main h2 {
 
     .card img {
         display: block;
+        width: 100%;
+        max-width: 100%;
         height: auto;
         align-items: center;
         object-fit: cover;
@@ -687,6 +694,12 @@ main h2 {
         width: unset;
         font-size: 18px;
     }
+
+    /* .footerStand{
+        display: block;
+        height: 88px;
+        width: 100%;
+    } */
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -719,13 +732,11 @@ main h2 {
     .footer {
         background-color: #4EA487;
         height: 112px;
-        /* position: fixed;
-        bottom: 88px; */
     }
 
-    .footerInner {
+    /* .footerInner {
         display: none;
-    }
+    } */
 
     .footerMobile {
         width: 100%;
