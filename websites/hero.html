@@ -33,11 +33,22 @@
 
         background-image: url(/Travelblog/assets/img/hero_animation/HeroBackgroundImage.jpg);
         background-size: cover;
-        background-position: center right;
+        background-position: right -300px center;
 
+        overflow: visible;
 
         z-index: 1;
 
+      }
+
+      .animation {
+        position: absolute;
+
+        width: 1440px;
+        height: 515px;
+        inset: 0;
+
+        overflow: hidden;
       }
 
       .vector {
@@ -60,13 +71,11 @@
       }
       @keyframes fadetoleft {
         from {
-          opacity: 1;
-          transform:translateX(-15%);
+          transform:translateX(0%);
 
         }
 
         to {
-          opacity: 1;
           transform: translateX(-100%);
         }
       }
@@ -91,23 +100,21 @@
 
       @keyframes sideIn {
         from {
-          opacity: 1;
-          transform: translateX(30%);
+          transform: translateX(100%);
         }
 
         to {
-          opacity: 1;
-          transform: translateX(-30%);
+          transform: translateX(-20%);
         }
 
       }
       @keyframes fadetoleft2 {
         from {
-          transform:translateX(-30%);
+          transform:translateX(-20%);
         }
 
         to {
-          transform: translateX(-100%);
+          transform: translateX(-30%);
         }
       }
 
@@ -115,7 +122,7 @@
         margin: 0;
         padding: 0;
 
-        left: 0px;
+        left: 64px;
         top: 0px;
         
 
@@ -168,7 +175,7 @@
         opacity: 1;
 
         animation: sideIntext 1s linear forwards;
-        animation-delay: 3s;
+        animation-delay: 3.5s;
 
         z-index: 5;
       }
@@ -192,7 +199,7 @@
 
         width: 345px;
         height: 63px;
-        top: 117px
+        top: 117px;
         /*left: 175px;*/;
 
         font-family: Arima;
@@ -269,8 +276,8 @@
 
         width: 160px;
         height: 160px;
-        top: 515px;
-        left: 500px;
+        right: -220px;
+        bottom: -220px;
 
         box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
         
@@ -296,7 +303,7 @@
         }
 
         to {
-          transform: translateY(-120%);
+          transform: translateY(-100%);
           opacity: 1;
         }
       }
@@ -307,12 +314,12 @@
         width: 132px;
         height: 132px;
 
-        animation:rotade 8s linear infinite;
+        animation:rotate 8s linear infinite;
       }
 
-      @keyframes rotade {
+      @keyframes rotate {
         from {
-          transform: rotat(0deg);
+          transform: rotate(0deg);
         }
 
         to {
@@ -368,23 +375,8 @@
             hidden cave dwellings, every moment feels unrea<br />
             in the best way.
           </span>
-        </div>
-          <div class="vector">
-          
-          </div>
-          <div class="vectortest">
 
-          </div>
-          <div class="vector1">
-
-          </div>
-          <div class="vector2">
-
-          </div>
-        </div>
-        
-
-      <div class="circle">
+          <div class="circle">
 
         <div class="rotating-text">
           <svg viewBox="0 0 200 200">
@@ -411,6 +403,21 @@
         <div class="flag"></div>
 
       </div>
+        </div>
+        <div class="animation">
+          <div class="vector">
+          
+          </div>
+          
+          <div class="vector1">
+        
+
+          </div>
+        </div>
+          <div class="vector2">
+
+          </div>
+        </div>
     </div>
   </body> 
 </html>
