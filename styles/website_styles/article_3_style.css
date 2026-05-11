@@ -238,7 +238,7 @@
     line-height: 1.2;
     font-size: 24px;
     color: rgba(61, 61, 61, 1);
-    
+
 }
 
 /* Maincontent der Seite */
@@ -264,7 +264,7 @@ main h2 {
     font-weight: 600;
     font-size: 32px;
     color: rgba(84, 55, 13, 1);
-    
+
 }
 
 .weatherBlog {
@@ -319,7 +319,7 @@ main h2 {
     /* border: 2px solid black; */
 }
 
-.card h2{
+.card h2 {
     text-align: center;
 }
 
@@ -457,10 +457,24 @@ main h2 {
     width: 32px;
 }
 
-/* Responsive */
+.footerStand{
+    width: 100%;
+    max-width: 100%;
+    height: 112px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1280px) {
-    .headlineArttwo {
-        padding: 48px max(calc(50% - 720px), 64px);
+
+    /* .headlineArttwo {
+        padding: 48px max(calc(50% - 512px), 12px);
+    } */
+
+    .headlineWrapper {
+        width: 100%;
+        /* max-width: 1200px; */
+        display: flex;
+        justify-content: center;
+        padding: 0px max(calc(50% - 512px), 48px);
     }
 
     .headlines>h2 {
@@ -502,15 +516,27 @@ main h2 {
     /* .teaser>p {
         font-size: 16px;
     } */
+    main {
+        padding: 0px max(calc(50% - 512px), 48px);
+    }
 
-    main p{
+    main p {
         font-size: 18px;
     }
 
-    .teaser p{
+    .teaser p {
         font-size: 18px;
     }
 
+    .blogs {
+        padding: 0px 16px 0px 16px;
+    }
+
+    .card img {
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
 
     .sharing>p {
         font-size: 18px;
@@ -523,7 +549,9 @@ main h2 {
         max-width: 1200px;
         align-items: center;
     } */
-
+    .footerStand{
+        display: none;
+    }
 
     .footerMobile {
         display: none;
@@ -537,9 +565,16 @@ main h2 {
 }
 
 @media screen and (max-width: 767px) {
+    .headlineWrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0px max(calc(50% - 512px), 48px);
+    }
+
     .headlineArttwo {
         flex-direction: column;
-        padding: 24px max(calc(50% - 720px), 16px) 40px max(calc(50% - 720px), 16px);
+        /* padding: 24px max(calc(50% - 720px), 16px) 40px max(calc(50% - 720px), 16px); */
         gap: 24px;
     }
 
@@ -560,7 +595,7 @@ main h2 {
     }
 
     .website_info {
-        flex-direction: column;
+        flex-direction: row;
         font-size: 12px;
         padding-top: 24px;
         gap: 8px;
@@ -586,29 +621,54 @@ main h2 {
         font-size: 16px;
     }
 
-    .teaser {
-        padding: 0px max(calc(50% - 720px), 16px);
-    }
+    /* .teaser {
+        padding: 0px max(calc(50% - 512px), 48px);
+    } */
 
     .teaser>p {
-        font-size: 16px;
+        font-size: 20px;
+    }
+
+    .weatherBlog p{
+        font-size: 20px;
+    }
+    main {
+        font-size: 20px;
     }
 
     main {
-        font-size: 16px;
+        padding: 0px max(calc(50% - 512px), 48px);
     }
 
-    iframe {
-        width: 320px;
-        height: 185px;
+    .blogs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        gap: 60px;
     }
 
-    .proTipps {
-        transform: rotate(-14deg) translateX(10px) translateY(30px);
+    .card{
+        width: 100%;
+        max-width: 100%;
+        gap: 16px;
+        align-items: center;
     }
 
-    .proTipps>p {
-        font-size: 28px;
+    .card p{
+        font-size: 20px;
+    }
+
+    .card img {
+        display: block;
+        height: auto;
+        align-items: center;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 30px;
+        margin: 0; 
     }
 
     .arrow_big {
@@ -644,9 +704,23 @@ main h2 {
         display: none;
     }
 
+    main {
+        gap: 32px;
+    }
+
+    .weatherBlog{
+        margin-top: 0;
+    }
+    .weatherBlog img {
+        border-radius: 30px;
+        margin-bottom: 32px;
+    }
+
     .footer {
-        background-color: #F1C953;
+        background-color: #4EA487;
         height: 112px;
+        /* position: fixed;
+        bottom: 88px; */
     }
 
     .footerInner {
