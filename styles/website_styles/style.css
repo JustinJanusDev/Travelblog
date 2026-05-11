@@ -196,10 +196,9 @@ body {
     width: calc(100% + 12px);
     height: 48px;
 
-    background-image: url(./assets/icons/wavyUnderlineHighlights.svg);
+    background-image: url(../../assets/icons/header/wavyUnderlineHighlights.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-
     opacity: 0;
 }
 
@@ -213,7 +212,7 @@ body {
     width: calc(100% + 12px);
     height: 48px;
 
-    background-image: url(./assets/icons/wavyUnderlineFaq.svg);
+    background-image: url(../../assets/icons/header/wavyUnderlineFaq.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
@@ -230,7 +229,7 @@ body {
     width: calc(100% + 12px);
     height: 48px;
 
-    background-image: url(./assets/icons/wavyUnderlineContact.svg);
+    background-image: url(../../assets/icons/header/wavyUnderlineContact.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
@@ -380,21 +379,21 @@ input[type="radio"] {
 }
 
 .elementOne {
-    background-image: url(./assets/img/Slider_1.jpg);
+    background-image: url(../../assets/img/landing_page/Slider_1.jpg);
     /* background-color: yellow; */
 }
 
 .elementTwo {
-    background-image: url(./assets/img/Slider_2.jpg);
+    background-image: url(../../assets/img/landing_page/Slider_2.jpg);
     /* background-color: red; */
 }
 
 .elementThree {
-    background-image: url(./assets/img/Slider_3.jpg);
+    background-image: url(../../assets/img/landing_page/Slider_3.jpg);
 }
 
 .elementFour {
-    background-image: url(./assets/img/Slider_4.jpg);
+    background-image: url(../../assets/img/landing_page/Slider_4.jpg);
 }
 
 .sliderLandingPage input[value="one"]:checked~.sliderLandingPageWrapper {

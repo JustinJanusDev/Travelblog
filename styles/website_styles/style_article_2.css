@@ -3,6 +3,7 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: "Palanquin";
+  line-height: 120%;
 }
 
 ul li::marker {
@@ -50,7 +51,7 @@ ol li::marker {
   display: flex;
   flex-direction: row;
   gap: 32px;
-  padding-top: 40px;
+  padding-top: 32px;
 }
 
 .info_blockone {
@@ -119,7 +120,7 @@ ol li::marker {
   text-align: center;
   border-radius: 30px;
   padding: 16px;
-  width: 450px;
+  max-width: 32ch;
 }
 
 .author_info > img {
@@ -320,17 +321,23 @@ li > a {
     padding: 0px max(calc(50% - 720px), 64px);
   }
 
-  .proTipps > p {
-    font-size: 28px;
-  }
-
   .sharing > p {
     font-size: 18px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 850px) {
+@media screen and (min-width: 768px) and (max-width: 995px) {
   .website_info {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 780px) {
+  .info_blockone {
+    flex-direction: column;
+  }
+
+  .info_blocktwo {
     flex-direction: column;
   }
 }
@@ -361,7 +368,7 @@ li > a {
   .website_info {
     flex-direction: column;
     font-size: 12px;
-    padding-top: 24px;
+    padding-top: 16px;
     gap: 8px;
   }
 
@@ -409,10 +416,6 @@ li > a {
 
   .proTipps {
     transform: rotate(-14deg) translateX(10px) translateY(30px);
-  }
-
-  .proTipps > p {
-    font-size: 28px;
   }
 
   .arrow_big {
