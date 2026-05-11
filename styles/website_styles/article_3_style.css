@@ -566,10 +566,10 @@ main h2 {
 }
 
 @media screen and (max-width: 767px) {
-    body{
+    body {
         padding-bottom: 88px;
     }
-    
+
     .headlineWrapper {
         width: 100%;
         display: flex;
@@ -634,9 +634,10 @@ main h2 {
         font-size: 20px;
     }
 
-    .weatherBlog p{
+    .weatherBlog p {
         font-size: 20px;
     }
+
     main {
         font-size: 20px;
     }
@@ -655,14 +656,14 @@ main h2 {
         gap: 60px;
     }
 
-    .card{
+    .card {
         width: 100%;
         max-width: 100%;
         gap: 16px;
         align-items: center;
     }
 
-    .card p{
+    .card p {
         font-size: 20px;
     }
 
@@ -675,7 +676,7 @@ main h2 {
         object-fit: cover;
         object-position: center;
         border-radius: 30px;
-        margin: 0; 
+        margin: 0;
     }
 
     .arrow_big {
@@ -702,6 +703,27 @@ main h2 {
     } */
 }
 
+@media screen and (max-width: 650px) {
+    .footerLeft {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        text-align: left;
+        gap: 8px;
+    }
+
+    .footerInner {
+        justify-content: flex-start;
+        margin: 30px 24px;
+    }
+
+    .footerLinks img {
+        height: 24px;
+        width: 24px;
+    }
+
+}
+
 @media screen and (min-width: 481px) and (max-width: 767px) {
     .header {
         height: 70px;
@@ -721,18 +743,19 @@ main h2 {
         gap: 32px;
     }
 
-    .weatherBlog{
+    .weatherBlog {
         margin-top: 0;
     }
+
     .weatherBlog img {
         border-radius: 30px;
         margin-bottom: 32px;
     }
 
-    .footer {
+    /* .footer {
         background-color: #4EA487;
         height: 112px;
-    }
+    } */
 
     /* .footerInner {
         display: none;
@@ -745,6 +768,24 @@ main h2 {
     .footerMobile img {
         height: 60px;
         width: 60px;
+    }
+
+    .footerLeft {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        text-align: left;
+        gap: 8px;
+    }
+
+    .footerInner {
+        justify-content: flex-start;
+        margin: 30px 24px;
+    }
+
+    .footerLinks img {
+        height: 24px;
+        width: 24px;
     }
 
     .mainContent {
@@ -771,20 +812,14 @@ main h2 {
         display: none;
     }
 
-    /* .mainContent{
-        width: 100%;
-        max-width: calc(100% - 40px);
-        margin: auto 20px auto 20px;
+    /* .footerInner{
+        justify-content: flex-start;
+        margin: 12px 12px;
     } */
 
-
-    .footer {
-        background-color: #F1C953;
-        height: 88px;
-    }
-
     .footerInner {
-        display: none;
+        justify-content: flex-start;
+        margin: 12px 12px;
     }
 
     .footerMobile {
@@ -795,4 +830,6 @@ main h2 {
         height: 40px;
         width: 40px;
     }
+
+    */
 }
