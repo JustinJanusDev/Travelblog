@@ -142,10 +142,20 @@ ol li::marker {
   font-weight: bold;
 }
 
-.slider_beach {
-  padding: 64px;
-  display: flex; 
+.carousel {
+  display: flex;
+  justify-content: center;
   align-items: center;
+}
+
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.slider_beach {
+  display: flex;
+  justify-content: center;
 }
 
 .slider_beach_element {
@@ -154,20 +164,30 @@ ol li::marker {
   object-fit: cover;
   border-radius: 16px;
   box-shadow: -9px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  margin-left: -80px;
 
-  transform: perspective(120px) rotateY(2deg) translateX(-200px);
+  transform: perspective(120px) rotateY(2deg);
   transform-origin: 50% 50%;
   transition: all 300ms ease-out;
 }
 
+.slider_beach_element:first-child {
+  margin-left: 0;
+}
+
 .slider_beach_element:hover {
-  transform: perspective(120px) rotateY(0deg) translateX(0px) scaleX(1.1) scaleY(1.1);
+  transform: perspective(120px) rotateY(0deg) scale(1.1);
   transform-origin: 50% 50%;
+  z-index: 10;
 }
 
 .slider_beach_element:hover ~ .slider_beach_element {
-  transform: perspective(120px) rotateY(-2deg) translateX(200px);
+  transform: perspective(120px) rotateY(-2deg) translateX(120px);
   transform-origin: 50% 50%;
+}
+
+.slider_beach_element:has(~ .slider_beach_element:hover) {
+  transform: perspective(120px) rotateY(2deg) translateX(-120px);
 }
 
 main {
