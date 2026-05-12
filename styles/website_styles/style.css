@@ -821,24 +821,43 @@ button {
 
     .footer{
         margin-bottom: 88px;
+        height: 120px;
     }
     .footerInner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
         gap: 8px;
+        max-width: calc(100% - 40px);
     }
 
     .footerLeft{
         display: flex;
         flex-direction: column-reverse;
         justify-content: flex-start;
-        align-items: left;
+        align-items: flex-start;
+
         text-align: left;
         gap: 0px;
     }
 
+    .footerLeft a{
+        margin: 0;
+        line-height: 1.2;
+    }
+
     .footerLinks {
         width: 100%;
-        max-width: 150px;
+        max-width: 100px;
         gap: 8px;
+        /* margin-left: auto; */
+        justify-content: flex-end;
+        /* align-self: flex-end; */
+    }
+
+    .copyright{
+        gap: 6px;
     }
 
     .footerLinks img{
