@@ -47,11 +47,6 @@ body {
     /* border: 10px solid black; */
 }
 
-/* .header img {
-    height: 72px;
-    width: 72px;
-} */
-
 .navBar {
     /* width: 100%; */
     display: flex;
@@ -66,10 +61,10 @@ body {
     color: #F8F5EB;
 }
 
-.headerTransform {
+/* .headerTransform {
     position: relative;
     overflow: hidden;
-}
+} */
 
 /* .headerTransform img {
     width: 100%;
