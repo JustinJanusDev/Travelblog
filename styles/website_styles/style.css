@@ -765,6 +765,7 @@ input[type="radio"] {
     width: 188px;
     gap: 16px;
     margin-left: auto;
+    align-items: center;
 }
 
 .footerLinks img {
