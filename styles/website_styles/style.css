@@ -839,7 +839,7 @@ button {
         align-items: flex-start;
 
         text-align: left;
-        gap: 0px;
+        gap: 8px;
     }
 
     .footerLeft a{
