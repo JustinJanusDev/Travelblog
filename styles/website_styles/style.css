@@ -78,7 +78,7 @@ body {
     display: block;
 } */
 
-.sliderHeaderWrapper{
+/* .sliderHeaderWrapper{
     position: relative;
     width: 100vw;
     max-width: none;
@@ -92,7 +92,7 @@ body {
     overflow: hidden;
     z-index: 2;
     transition: all 2s ease-in-out;
-}
+} */
 
 .sliderBElement {
     min-width: 100%;
@@ -105,26 +105,26 @@ body {
     background-repeat: no-repeat;
 }
 
-.herobackgroundImage{
+/* .herobackgroundImage{
     background-image: url(./assets/img/HeroBackgroundImage.jpg);
     /* border: 1px solid white; */
-}
+} */
 
-.heroBackgroundImageCoverOne{
+/* .heroBackgroundImageCoverOne{
     background-image: url(./assets/img/HeroBackgroundImageCoverOne.png);
     width: 942px;
     height: 100%;
     /* border: 1px dotted green; */
-}
+} */
 
-.heroBackgroundImageCoverTwo{
+/* .heroBackgroundImageCoverTwo{
     background-image: url(./assets/img/HeroBackgroundImageCoverTwo.png);
     width: 647px;
     height: 540px;
     /* border: 1px double red; */
-}
+} */
 
-.HeroText{
+/* .HeroText{
     position: absolute;
     width: 100%;
     top: 144px;
@@ -139,9 +139,9 @@ body {
     animation-delay: 0.3s;
    
     /* z-index: 2; */
-}
+} */
 
-@keyframes fadeInUp {
+/* @keyframes fadeInUp {
         from {
             opacity: 0;
             transform: translateY(20px);
@@ -150,25 +150,23 @@ body {
             opacity: 1;
             transform: translateY(0);
         }
-    }
+    } */
 
-
-
-.HeroText h1{
+/* .HeroText h1{
     font-family: "Arima";
     font-weight: 700;
     font-size: 60px;
     color: rgba(84, 55, 13, 1);
-}
+} */
 
-.HeroText p{
+/* .HeroText p{
     font-family: 'Palanquin';
     font-weight: 500;
     font-size: 28px;
     color: rgba(84, 55, 13, 1);
-}
+} */
 
-.sliderHeaderWrapper .sliderBElement{
+/* .sliderHeaderWrapper .sliderBElement{
     opacity: 0;
     transform: translateX(100%);
     animation: slideInRight 1s ease forwards;
@@ -184,7 +182,7 @@ body {
 
 .headerTransform .sliderBElement:nth-child(3) {
     animation-delay: 1.6s;
-}
+} */
 
 .linkHighlights::after {
     content: "";
@@ -355,7 +353,8 @@ input[type="radio"] {
 #s1:checked ~ .sliderDots label[for="s1"],
 #s2:checked ~ .sliderDots label[for="s2"],
 #s3:checked ~ .sliderDots label[for="s3"],
-#s4:checked ~ .sliderDots label[for="s4"] {
+#s4:checked ~ .sliderDots label[for="s4"],
+#s5:checked ~ .sliderDots label[for="s5"] {
     width: 40px;
     border-radius: 999px;
     transform: scaleY(1);
@@ -376,6 +375,9 @@ input[type="radio"] {
     background-repeat: no-repeat;
 
     border-top-right-radius: 100px;
+
+    display: block;
+    cursor: pointer;
 }
 
 .elementOne {
@@ -396,6 +398,10 @@ input[type="radio"] {
     background-image: url(../../assets/img/landing_page/Slider_4.jpg);
 }
 
+.elementFive {
+    background-image: url(../../assets/img/landing_page/DevAkaPlaceholder.jpg);
+}
+
 .sliderLandingPage input[value="one"]:checked~.sliderLandingPageWrapper {
     transform: translateX(0%);
 }
@@ -410,6 +416,10 @@ input[type="radio"] {
 
 .sliderLandingPage input[value="four"]:checked~.sliderLandingPageWrapper {
     transform: translateX(-300%);
+}
+
+.sliderLandingPage input[value="five"]:checked~.sliderLandingPageWrapper {
+    transform: translateX(-400%);
 }
 
 .sliderCoverBox {
