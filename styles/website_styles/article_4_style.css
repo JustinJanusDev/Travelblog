@@ -797,6 +797,8 @@
 
                 .headline {
                     flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
                     gap: 24px;
 
                     padding: 24px max(calc(50% - 720px), 16px) 40px max(calc(50% - 720px), 16px);
@@ -850,6 +852,9 @@
 
                             .preface {
                                 padding: 0px max(calc(50% - 720px), 16px);
+
+                                margin-left: 32px;
+                                margin-right: 32px;
                             }
 
 
@@ -891,6 +896,9 @@
                         .blog_article {
                             padding: 0px max(calc(50% - 720px), 16px);
 
+                            margin-left: 32px;
+                            margin-right: 32px;
+
                             font-size: 18px;
 
                             flex-direction: column;
@@ -914,6 +922,9 @@
 
                         .concluding_text {
                             padding: 0px max(calc(50% - 720px), 16px);
+
+                            margin-left: 32px;
+                            margin-right: 32px;
 
                             font-size: 18px;
                         }
