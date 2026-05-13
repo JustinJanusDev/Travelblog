@@ -99,46 +99,6 @@ body {
     background-repeat: no-repeat;
 }
 
-/* .herobackgroundImage{
-    background-image: url(./assets/img/HeroBackgroundImage.jpg);
-    /* border: 1px solid white; */
-}
-
-*/
-/* .heroBackgroundImageCoverOne{
-    background-image: url(./assets/img/HeroBackgroundImageCoverOne.png);
-    width: 942px;
-    height: 100%;
-    /* border: 1px dotted green; */
-}
-
-*/
-/* .heroBackgroundImageCoverTwo{
-    background-image: url(./assets/img/HeroBackgroundImageCoverTwo.png);
-    width: 647px;
-    height: 540px;
-    /* border: 1px double red; */
-}
-
-*/
-/* .HeroText{
-    position: absolute;
-    width: 100%;
-    top: 144px;
-    left: 557px;
-    max-width: 345px;
-    max-height: 227px;
-    gap: 32px;
-
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.8s ease forwards;
-    animation-delay: 0.3s;
-   
-    /* z-index: 2; */
-}
-
-*/
 /* @keyframes fadeInUp {
         from {
             opacity: 0;
@@ -847,9 +807,7 @@ button {
         width: 100%;
         max-width: 100px;
         gap: 8px;
-        /* margin-left: auto; */
         justify-content: flex-end;
-        /* align-self: flex-end; */
     }
 
     .copyright {
