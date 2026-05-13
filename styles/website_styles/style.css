@@ -47,11 +47,6 @@ body {
     /* border: 10px solid black; */
 }
 
-/* .header img {
-    height: 72px;
-    width: 72px;
-} */
-
 .navBar {
     /* width: 100%; */
     display: flex;
@@ -66,10 +61,10 @@ body {
     color: #F8F5EB;
 }
 
-.headerTransform {
+/* .headerTransform {
     position: relative;
     overflow: hidden;
-}
+} */
 
 /* .headerTransform img {
     width: 100%;
@@ -819,10 +814,11 @@ button {
         height: 88px;
     } */
 
-    .footer{
+    .footer {
         margin-bottom: 88px;
         height: 120px;
     }
+
     .footerInner {
         width: 100%;
         display: flex;
@@ -832,7 +828,7 @@ button {
         max-width: calc(100% - 40px);
     }
 
-    .footerLeft{
+    .footerLeft {
         display: flex;
         flex-direction: column-reverse;
         justify-content: flex-start;
@@ -842,7 +838,7 @@ button {
         gap: 8px;
     }
 
-    .footerLeft a{
+    .footerLeft a {
         margin: 0;
         line-height: 1.2;
     }
@@ -856,11 +852,11 @@ button {
         /* align-self: flex-end; */
     }
 
-    .copyright{
+    .copyright {
         gap: 6px;
     }
 
-    .footerLinks img{
+    .footerLinks img {
         width: 24px;
         height: auto;
     }
@@ -890,14 +886,52 @@ button {
         display: none;
     }
 
-    /* .footer {
-        background-color: #F1C953;
-        height: 112px;
-    } */
+    .footer {
+        margin-bottom: 88px;
+        height: 120px;
+    }
 
-    /* .footerInner {
-        display: none;
-    } */
+    .footerInner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 8px;
+        max-width: calc(100% - 48px);
+    }
+
+    .footerLeft {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        text-align: left;
+        gap: 8px;
+    }
+
+    .footerLeft a {
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    .footerLinks {
+        width: 100%;
+        max-width: 100px;
+        gap: 8px;
+        /* margin-left: auto; */
+        justify-content: flex-end;
+        /* align-self: flex-end; */
+    }
+
+    .copyright {
+        gap: 6px;
+    }
+
+    .footerLinks img {
+        width: 24px;
+        height: auto;
+    }
 
     .footerMobile {
         width: 100%;
@@ -924,6 +958,10 @@ button {
         align-items: center;
     }
 
+    .footerInner {
+        width: 100%;
+        max-width: calc(100% - 40px);
+    }
 
     .footerMobile {
         display: none;
