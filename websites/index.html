@@ -22,13 +22,14 @@
             <div id="topMain" class="header">
                 <img src="../assets/icons/header/logo 03 1.png" alt="hae">
                 <div class="navBar">
-                    <a href="" class="linkHighlights">Highlights</a>
-                    <a href="" class="linkFaq">FAQ</a>
-                    <a href="" class="linkContact">Contact</a>
+                    <a href="#highlights" class="linkHighlights">Highlights</a>
+                    <a href="#faq" class="linkFaq">FAQ</a>
+                    <a href="#contact" class="linkContact">Contact</a>
                 </div>
             </div>
             <div class="headerTransform">
-                <div class="sliderHeaderWrapper">
+                <!-- Hier soll die Hero-Animation rein -->
+                <!-- <div class="sliderHeaderWrapper">
                     <div class="HeroText">
                         <h1>Cappadocia</h1>
                         <p>From sunrise balloons to<br>hidden cave dwellings,<br>every moment feels unreal<br>in the
@@ -44,13 +45,65 @@
 
                     </div>
 
-                </div>
+                </div> -->
+                <div class="hero">
+        <div class="text">
+          <h1>Cappadocia</h1>
+          <span>
+            From sunrise balloons to<br />
+            hidden cave dwellings, every moment feels unrea<br />
+            in the best way.
+          </span>
+
+          <div class="circle">
+
+        <div class="rotating-text">
+          <svg viewBox="0 0 200 200">
+
+            <path
+              id="curve"
+              d="
+                M 100,100
+                m -65,0
+                a 65,65 0 1,1 130,0
+                a 65,65 0 1,1 -130,0
+              "
+            />
+
+            <text>
+              <textPath href="#curve">
+                CAPPADOCIA • TURKEY • CAPPADOCIA •
+              </textPath>
+            </text>
+
+          </svg>
+        </div>
+
+        <div class="flag"></div>
+
+      </div>
+        </div>
+        <div class="animation">
+          <div class="vector">
+          
+          </div>
+          
+          <div class="vector1">
+        
+
+          </div>
+        </div>
+          <div class="vector2">
+
+          </div>
+        </div>
+    </div>
             </div>
         </div>
     </header>
     <mainContent class="mainContent">
         <div class="highlights">
-            <div class="highlightsHeadline">
+            <div id=highlights class="highlightsHeadline">
                 <img src="../assets/icons/landing_page/rocket_launch (1).png" alt="">
                 <h2>Highlights</h2>
             </div>
@@ -63,40 +116,42 @@
             <input type="radio" id="s2" name="slider" value="two">
             <input type="radio" id="s3" name="slider" value="three">
             <input type="radio" id="s4" name="slider" value="four">
+            <input type="radio" id="s5" name="slider" value="five">
 
             <div class="sliderDots">
                 <label for="s1" class="dot"></label>
                 <label for="s2" class="dot"></label>
                 <label for="s3" class="dot"></label>
                 <label for="s4" class="dot"></label>
+                <label for="s5" class="dot"></label>
             </div>
 
 
 
             <div class="sliderLandingPageWrapper">
-                <div class="sliderAElement elementOne">
+                <a href="article1.html" class="sliderAElement elementOne">
                     <div class="sliderCoverBox">
                         <h3>The World's Most Breathtaking<br>Beaches</h3>
                         <p>From powder-soft white sands to dramatic coastlines kissed by<br>turquoise waves, these
                             beaches are more
                             than destinations — they’re<br>feelings.</p>
                     </div>
-                </div>
-                <div class="sliderAElement elementTwo">
+                </a>
+                <a href=article_2.html class="sliderAElement elementTwo">
                     <div class="sliderCoverBox">
                         <h3>Copenhagen in 3 Days: Big <br>Experiences, Smart Spending</h3>
                         <p>FDiscover Copenhagen, where historic charm meets modern design,<br>vibrant cycling culture
                             and waterfront living.</p>
                     </div>
-                </div>
-                <div class="sliderAElement elementThree">
+                </a>
+                <a href=article_3.html class="sliderAElement elementThree">
                     <div class="sliderCoverBox">
                         <h3>Pattaya Pulse: <br>Food, Sun and Neon Nights</h3>
                         <p>From bustling promenades to nearby islands, the city offers an<br>energetic and diverse
                             escape. Discover Pattaya City, with vibrant<br>nightlife and rich cultural landmarks.</p>
                     </div>
-                </div>
-                <div class="sliderAElement elementFour">
+                </a>
+                <a href="" class="sliderAElement elementFour">
                     <div class="sliderCoverBox">
                         <h3>Mountain Fuji</h3>
                         <p>The most iconic mountain and an active volcano located about 100<br>kilometers southwest of
@@ -104,7 +159,16 @@
                             of
                             strength,<br>honor, and enduring prestige.</p>
                     </div>
-                </div>
+                </a>
+                <a href="" class="sliderAElement elementFive">
+                    <div class="sliderCoverBox">
+                        <h3>Developer Akademie</h3>
+                        <p>
+                            Unsere Faszination für Code bewegt Berge.<br>Jeder Bug ist eine Chance, zu
+                            lernen.<br>Gemeinsam erreichen wir mehr.<br>Bleib dran, Durchhaltevermögen wird belohnt!
+                        </p>
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -113,7 +177,7 @@
 
         <section>
 
-            <div class="faq-title">
+            <div id=faq class="faq-title">
                 <img src="../assets/icons/landing_page/live_help.svg" alt="">
 
                 <h2>FAQ</h2>
@@ -132,69 +196,77 @@
                     </summary>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper.
-                        Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper.
+                        Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo
+                        porta scelerisque turpis gravida semper.
+                        Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo
+                        porta scelerisque turpis gravida semper.
                     </p>
 
                 </details>
 
 
 
-                    <details class="accordion">
+                <details class="accordion">
 
-                        <summary>
-                            How do I plan, document, and share my travels?
+                    <summary>
+                        How do I plan, document, and share my travels?
 
-                            <img class="arrow-button" src="../assets/icons/landing_page/arrow.svg" alt="">
-                        </summary>
+                        <img class="arrow-button" src="../assets/icons/landing_page/arrow.svg" alt="">
+                    </summary>
 
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper.
-                            Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper.
-                        </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo
+                        porta scelerisque turpis gravida semper.
+                        Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo
+                        porta scelerisque turpis gravida semper.
+                    </p>
 
-                    </details>
-
-
-
-                        <details class="accordion">
-                        
-                            <summary>
-                                How can brands, companies, or fellow creators collaborate with me or get in touch?
-
-                                <img class="arrow-button" src="../assets/icons/landing_page/arrow.svg" alt="">
-                            </summary>
-
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper.
-                                Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper.
-                            </p>
-
-                        </details>
+                </details>
 
 
 
-                            <details class="accordion">
+                <details class="accordion">
 
-                                <summary>
-                                    How can readers support this blog and the work behind it?
+                    <summary>
+                        How can brands, companies, or fellow creators collaborate with me or get in touch?
 
-                                    <img class="arrow-button" src="../assets/icons/landing_page/arrow.svg" alt="">
-                                </summary>
+                        <img class="arrow-button" src="../assets/icons/landing_page/arrow.svg" alt="">
+                    </summary>
 
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper.
-                                    Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper.
-                                </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo
+                        porta scelerisque turpis gravida semper.
+                        Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo
+                        porta scelerisque turpis gravida semper.
+                    </p>
 
-                            </details>
+                </details>
 
-                        </div>
+
+
+                <details class="accordion">
+
+                    <summary>
+                        How can readers support this blog and the work behind it?
+
+                        <img class="arrow-button" src="../assets/icons/landing_page/arrow.svg" alt="">
+                    </summary>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo
+                        porta scelerisque turpis gravida semper.
+                        Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo
+                        porta scelerisque turpis gravida semper.
+                    </p>
+
+                </details>
+
+            </div>
         </section>
-        
-        
+
+
         <section>
-            <div class="contact-section">
+            <div id=contact class="contact-section">
                 <div class="contact-title contact-fields">
                     <img src="../assets/icons/landing_page/person_pin.svg" alt="">
 
@@ -230,18 +302,19 @@
             </div>
 
 
-                <form class="support" action="support-data">
+            <form class="support" action="support-data">
 
-                    <label for="support">How can I help?</label>
-                    <input type="text" id="support" name="support">
+                <label for="support">How can I help?</label>
+                <input type="text" id="support" name="support">
 
-                </form>
+            </form>
 
 
             <div class="concluding-section">
                 <div class="policy">
                     <input type="checkbox" name="policy" id="policy">
-                    <p>I've read the <a class="privacy-policy" href="#">privacy policy</a> and agree to the processing of my data as outlined.</p>
+                    <p>I've read the <a class="privacy-policy" href="#">privacy policy</a> and agree to the processing
+                        of my data as outlined.</p>
                 </div>
 
                 <div class="send-button">
@@ -255,7 +328,7 @@
     <footer class="footer">
         <div class="footerMobile">
             <a href="">
-                <img src="../assets/icons/phone/Home.png" alt="HomeButton">
+                <img src="../assets/icons/phone/Home.svg" alt="HomeButton">
             </a>
             <a href="">
                 <img src="../assets/icons/phone/rocket_launch.png" alt="RocketLaunch">

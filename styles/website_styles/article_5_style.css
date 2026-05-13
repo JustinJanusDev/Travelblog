@@ -1,0 +1,293 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.content_wrapper {
+  margin: 0px;
+  padding: 0px;
+
+  /*width: 1201px;
+  height: 2534.5517578125px;*/
+  top: 129px;
+  left: 120px;
+  padding-top: 80px;
+  gap: 88px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article_5 {
+  margin: 0px;
+  padding: 0px;
+
+  width: 1200px;
+  height: 524px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 48px;
+}
+
+.headline {
+  margin: 0px;
+  padding: 0px;
+
+  width: 1200px;
+  height: 389px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ueberschrift {
+  margin: 0px;
+  padding: 0px;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 902px;
+  height: 370px;
+  gap: 40px;
+}
+
+.ueberschrift_text {
+  margin: 0px;
+  padding: 0px;
+  width: 902px;
+  height: 311px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.h_bereich {
+  margin: 0px;
+  padding: 0px;
+  width: 902px;
+  height: 210px;
+  gap: 8px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.h_bereich > h3 {
+  margin: 0px;
+  padding: 0px;
+
+  width: 529px;
+  height: 48px;
+
+  font-family: Palanquin;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0%;
+
+  color: rgba(78, 164, 135, 1);
+}
+
+.h_bereich > h1 {
+  margin: 0px;
+  padding: 0px;
+
+  width: 902px;
+  height: 154px;
+
+  font-family: Arima;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+  letter-spacing: 0%;
+
+  color: rgba(241, 201, 83, 1);
+}
+
+.ueberschrift_text > p {
+  margin: 0px;
+  padding: 0px;
+
+  width: 902px;
+  height: 93px;
+
+  font-family: Palanquin;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0%;
+
+  color: rgba(84, 55, 13, 1);
+}
+
+.ueberschrift_info {
+  margin: 0px;
+  padding: 0px;
+
+  width: 575px;
+  height: 19px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 32px;
+}
+
+.date {
+  margin: 0px;
+  padding: 0px;
+
+  width: 133px;
+  height: 19px;
+
+  gap: 8px;
+
+  display: flex;
+  align-items: center;
+}
+
+.date > img {
+  width: 16px;
+  height: 18px;
+}
+
+.date > p {
+  margin: 0px;
+  padding: 0px;
+  width: 111px;
+  height: 19px;
+
+  display: flex;
+
+  font-family: Palanquin;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0%;
+
+  color: rgba rgba(84, 55, 13, 1);
+}
+
+.author_info {
+  margin: 0px;
+  padding: 16px;
+
+  width: 272px;
+  height: 389px;
+
+  gap: 16px;
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(78, 164, 135, 0.2);
+}
+
+.author_info > img {
+  margin: 0px;
+  padding: 0px;
+
+  width: 120px;
+  height: 120px;
+
+  border-radius: 50%;
+}
+
+.author_text {
+  margin: 0px;
+  padding: 0px;
+
+  width: 240px;
+  height: 221px;
+  gap: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h_berreich1 {
+  margin: 0px;
+  padding: 0px;
+
+  width: 205px;
+  height: 38px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.h_berreich1 > h3 {
+  margin: 0px;
+  padding: 0px;
+
+  width: 205px;
+  height: 19px;
+
+  font-family: Arima;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0%;
+
+  color: rgba(84, 55, 13, 1);
+}
+
+.author_text > p {
+  margin: 0px;
+  padding: 0px;
+
+  width: 240px;
+  height: 171px;
+
+  font-family: Palanquin;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0%;
+
+  color: rgba(84, 55, 13, 1);
+}
+
+.teaser {
+  margin: 0px;
+  padding: 0px;
+
+  width: 1200px;
+  height: 87px;
+
+  font-family: Palanquin;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0%;
+
+  color: rgba(61, 61, 61, 1);
+}
+
+.description_dubai {
+  margin: 0px;
+  padding: 0px;
+
+  width: 1201px;
+  height: 644px;
+  gap: 32px;
+
+}
