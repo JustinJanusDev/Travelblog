@@ -225,10 +225,10 @@ ol li::marker {
 .author_info > p {
   font-size: 16px;
   font-family: "Palanquin";
-  font-weight: 400; 
+  font-weight: 400;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -260,7 +260,7 @@ main > h4 {
   color: var(--font-color-text);
 }
 
-.description-list{
+.description-list {
   font-size: 24px;
   font-family: "Palanquin";
   font-weight: 400;
@@ -337,7 +337,7 @@ li > a {
   color: var(--font-color-title);
 }
 
-.article-proTipps{
+.article-proTipps {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -495,7 +495,7 @@ li > a {
 
 /* Responsive Design*/
 @media screen and (min-width: 1441px) {
-  .headline_arttwo {
+  .headline_art_one {
     padding: 48px max(calc(50% - 720px), 120px);
   }
 
@@ -509,7 +509,7 @@ li > a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
-  .headline_arttwo {
+  .headline_art_one {
     padding: 48px max(calc(50% - 720px), 64px);
   }
 
@@ -554,10 +554,6 @@ li > a {
     padding: 0px max(calc(50% - 720px), 64px);
   }
 
-  .teaser > p {
-    font-size: 16px;
-  }
-
   main {
     font-size: 16px;
   }
@@ -580,9 +576,15 @@ li > a {
   .website_info {
     flex-direction: column;
   }
+
+  .headlines {
+  padding: 0px max(calc(50% - 720px), 16px);
 }
 
-@media screen and (min-width: 768px) and (max-width: 780px) {
+
+}
+
+/* @media screen and (min-width: 768px) and (max-width: 780px) {
   .info_blockone {
     flex-direction: column;
   }
@@ -590,7 +592,7 @@ li > a {
   .info_blocktwo {
     flex-direction: column;
   }
-}
+} */
 
 @media screen and (min-width: 768px) {
   .footerInner {
@@ -604,13 +606,13 @@ li > a {
 }
 
 @media screen and (max-width: 767px) {
-  .headline_arttwo {
+  .headline_art_one {
     flex-direction: column;
     padding: 24px max(calc(50% - 720px), 16px) 40px max(calc(50% - 720px), 16px);
     gap: 24px;
   }
 
-  .headline_arttwo {
+  .headline_art_one {
     align-items: center;
   }
 
@@ -628,9 +630,9 @@ li > a {
 
   .website_info {
     flex-direction: column;
-    font-size: 12px;
+    font-size: 16px;
     padding-top: 16px;
-    gap: 8px;
+    gap: 16px;
   }
 
   .info_blockone {
@@ -642,7 +644,7 @@ li > a {
   }
 
   .author_info {
-    width: unset;
+    max-width: unset;
   }
 
   .author_info > h2 {
@@ -653,21 +655,32 @@ li > a {
     font-size: 16px;
   }
 
-  .teaser {
-    padding: 0px max(calc(50% - 720px), 16px);
+  main {
+    padding-top: 16px;
   }
 
-  .teaser > p {
+  main > h4 {
+    font-size: 20px;
+  }
+
+  .description-text {
     font-size: 16px;
+    color: var(--font-color-introduction);
+  }
+
+  .description-list {
+    font-size: 16px;
+    color: var(--font-color-introduction);
+  }
+
+  ol li {
+    font-size: 16px;
+    color: var(--font-color-introduction);
   }
 
   main {
     font-size: 16px;
-  }
-
-  iframe {
-    width: 320px;
-    height: 185px;
+    padding: 0px max(calc(50% - 720px), 16px);
   }
 
   .description {
@@ -676,7 +689,15 @@ li > a {
   }
 
   .proTipps {
-    transform: rotate(-14deg) translateX(10px) translateY(30px);
+    transform: rotate(-12deg) translateX(-70px) translateY(-8px);
+  }
+
+  .teaser {
+    padding: 0px max(calc(50% - 720px), 16px);
+  }
+
+  .teaser > p {
+    font-size: 16px;
   }
 
   .arrow_big {
@@ -695,7 +716,7 @@ li > a {
     width: unset;
     font-size: 18px;
   }
-}
+} 
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
   .header {
@@ -710,6 +731,18 @@ li > a {
 
   .navBar {
     display: none;
+  }
+
+.headlines {
+  padding: 0px max(calc(50% - 720px), 16px);
+}
+
+.author_info{
+  margin: 0px max(calc(50% - 720px), 16px);
+}
+
+  .proTipps {
+    transform: rotate(-12deg) translateX(-120px) translateY(-32px);
   }
 
   .footer {
