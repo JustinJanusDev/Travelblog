@@ -50,6 +50,9 @@ body {
   margin: 0px;
   padding: 0px;
 
+  display: flex;
+  flex-direction: column;
+
   width: 902px;
   height: 370px;
   gap: 40px;
@@ -152,6 +155,28 @@ body {
   align-items: center;
 }
 
+.date > img {
+  width: 16px;
+  height: 18px;
+}
+
+.date > p {
+  margin: 0px;
+  padding: 0px;
+  width: 111px;
+  height: 19px;
+
+  display: flex;
+
+  font-family: Palanquin;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0%;
+
+  color: rgba rgba(84, 55, 13, 1);
+}
+
 .author_info {
   margin: 0px;
   padding: 16px;
@@ -170,6 +195,16 @@ body {
   background-color: rgba(78, 164, 135, 0.2);
 }
 
+.author_info > img {
+  margin: 0px;
+  padding: 0px;
+
+  width: 120px;
+  height: 120px;
+
+  border-radius: 50%;
+}
+
 .author_text {
   margin: 0px;
   padding: 0px;
@@ -184,7 +219,7 @@ body {
   align-items: center;
 }
 
-.h_bereich1 {
+.h_berreich1 {
   margin: 0px;
   padding: 0px;
 
@@ -198,7 +233,7 @@ body {
   text-align: center;
 }
 
-.h_bereich1 > h3 {
+.h_berreich1 > h3 {
   margin: 0px;
   padding: 0px;
 
@@ -213,4 +248,46 @@ body {
   letter-spacing: 0%;
 
   color: rgba(84, 55, 13, 1);
+}
+
+.author_text > p {
+  margin: 0px;
+  padding: 0px;
+
+  width: 240px;
+  height: 171px;
+
+  font-family: Palanquin;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0%;
+
+  color: rgba(84, 55, 13, 1);
+}
+
+.teaser {
+  margin: 0px;
+  padding: 0px;
+
+  width: 1200px;
+  height: 87px;
+
+  font-family: Palanquin;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0%;
+
+  color: rgba(61, 61, 61, 1);
+}
+
+.description_dubai {
+  margin: 0px;
+  padding: 0px;
+
+  width: 1201px;
+  height: 644px;
+  gap: 32px;
+
 }
