@@ -40,6 +40,8 @@ ol li::marker {
 .navBar a {
   position: relative;
   text-decoration: none;
+  font-family: "Arima";
+  font-weight: 700;
   font-size: 1.5rem;
   color: #F8F5EB;
 }
