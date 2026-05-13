@@ -18,6 +18,101 @@
 
 
 
+.header {
+    display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 4vw;
+
+    width: 100%;
+    height: 128px;
+  
+    background-color: #4ea487;
+
+    padding: 32px 5vw;
+}
+
+
+    .navBar {
+        display: flex;
+            align-items: center;
+            gap: 72px;
+    }
+
+
+        .navBar a {
+            position: relative;
+  
+            text-decoration: none;
+  
+            font-family: "Arima";
+                font-weight: 700;
+                font-size: 1.5rem;
+  
+                color: #f8f5eb;
+        }
+
+      
+        .linkHighlights::after {
+            content: "";
+            position: absolute;
+
+            left: -4px;
+            bottom: -20px;
+
+            width: calc(100% + 12px);
+            height: 48px;
+
+            background-image: url(../../assets/icons/header/wavyUnderlineHighlights.svg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            
+            opacity: 0;
+        }
+
+
+        .linkFaq::after {
+            content: "";
+            position: absolute;
+
+            left: -4px;
+            bottom: -20px;
+
+            width: calc(100% + 12px);
+            height: 48px;
+
+            background-image: url(../../assets/icons/header/wavyUnderlineFaq.svg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+            opacity: 0;
+        }
+
+
+        .linkContact::after {
+            content: "";
+            position: absolute;
+
+            left: -4px;
+            bottom: -20px;
+
+            width: calc(100% + 12px);
+            height: 48px;
+
+            background-image: url(../../assets/icons/header/wavyUnderlineContact.svg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+            opacity: 0;
+        }
+
+        
+        .navBar a:hover::after {
+            opacity: 1;
+        }
+
+
+
 
 
 .headline {
@@ -681,6 +776,24 @@
 
 
             @media screen and (max-width: 767px) {
+
+                .header {
+                    height: 70px;
+    
+                    justify-content: center;
+                }
+
+                
+                    .header img {
+                        width: 56px;
+                        height: 56px;
+                    }
+
+
+                    .navBar {
+                        display: none;
+                }
+
 
                 .headline {
                     flex-direction: column;
