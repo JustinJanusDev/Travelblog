@@ -1,0 +1,893 @@
+* {
+    margin: 0;
+
+    box-sizing: border-box;
+    line-height: 120%;
+
+    font-family: "Palanquin";
+}
+
+    ul li::marker {
+        font-size: 12px;
+    }
+
+    ol li::marker {
+        font-size: 20px;
+    }
+
+
+
+
+
+
+.headline {
+    display: flex;
+        gap: 26px;
+
+    margin-top: 80px;
+    padding: 48px max(calc(50% - 720px), 120px);
+}
+
+
+    .introduction {
+        display: flex;
+            flex-direction: column;
+            gap: 8px;
+    }
+
+
+        .introduction > h3 {
+            font-size: 40px;
+            font-weight: 600;
+
+            color: var(--font-color-title);
+        }
+
+
+        .introduction > h2 {
+            font-family: "Arima";
+                font-size: 64px;
+                font-weight: 700;
+
+            color: var(--font-color-h1);
+        }
+
+
+        .introduction > p {
+            font-size: 28px;
+
+            color: var(--font-color-introduction);
+        }
+
+
+
+    .website_data {
+        display: flex;
+            flex-direction: row;
+            gap: 32px;
+
+        padding-top: 32px;
+    }
+
+
+        .website_data span {
+            color: var(--font-color-introduction);
+        }
+
+
+            .first_data_block, .second_data_block {
+                display: flex;
+                    gap: 32px;
+            }
+
+
+                .calendar_info, .read_time_info, .reader_info, .sharing_info {
+                    display: flex;
+                        align-items: center;
+                        gap: 6px;
+                }
+
+
+                .calendar_info > img {
+                    height: 18px;
+                }
+
+
+                .read_time_info > img {
+                    height: 7px;
+                }
+
+
+                .reader_info > img {
+                    height: 14px;
+                }
+
+
+                .sharing_info > img {
+                    height: 18px;
+                }
+
+
+
+
+    .author_tamara {
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        border-radius: 30px;
+        padding: 16px;
+
+        max-width: 32ch;
+
+        background-color: var(--background-color-biography);
+        color: var(--font-color-introduction);
+    }
+
+
+        .author_tamara > img {
+            width: 120px;
+            
+            margin-bottom: 16px;
+        }
+
+
+        .author_tamara > h2 {
+            font-family: "Arima";
+                font-size: 18px;
+                font-weight: 700;
+        }
+
+
+        .author_tamara > h3 {
+            font-family: "Arima";
+                font-size: 18px;
+                font-weight: 400;
+
+            margin-bottom: 12px;
+        }
+
+
+    .preface {
+        font-size: 24px;
+
+        color: var (--font-color-introduction);
+
+        padding: 0px max(calc(50% - 720px), 120px);
+    }
+
+
+.fuji_img {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+
+    margin-top: 88px;
+    margin-bottom: 88px;
+}
+
+
+    .fuji_img > img {
+        border-radius: 150px;
+
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+    .information_links {
+        display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+        max-width: 1100px;
+        
+        margin: 0 auto;
+
+        padding-bottom: 64px;
+    }
+
+
+        .information_links a {
+            font-family: "Arima";
+                font-size: 28px;
+                font-weight: 700;
+
+            color: var(--font-color-text);
+            text-decoration: none;
+
+            border: 1px solid var(--font-color-title);
+                border-radius: 40px;
+                background-color: var(--background-color-biography);
+
+            padding: 12px 32px;
+
+            text-align: center;
+        }
+
+
+            .information_links a:hover {
+                text-decoration: underline;
+                scale: calc(1.03);
+            }
+
+
+            .information_links a:active {
+                scale: calc(1.1);
+            }
+
+
+
+
+
+    .information_table {
+        display: flex;
+            justify-content: center;
+            align-items: center;
+
+        margin: 0 auto;
+
+        max-width: 900px;
+
+        color: var(--font-color-introduction);
+        border: 1px solid var(--font-color-text);
+            border-radius: 8px;
+    }
+
+
+        .information_table th {
+            padding: 24px 40px 16px 40px;
+
+            text-align: left;
+
+            font-family: "Arima";
+                font-size: 24px;
+        }
+
+
+        .information_table td {
+            padding: 0 40px 24px 40px;
+
+            text-align: left;
+
+            font-size: 20px;
+        }
+
+
+
+
+
+
+    .blog_article {
+        display: flex;
+            gap: 32px;
+
+        margin-top: 88px;
+        padding: 0px max(calc(50% - 720px), 120px);
+
+        color: var(--font-color-text);
+        
+        font-size: 24px;
+    }
+
+
+        .experience_blog {
+            display: flex;
+                flex-direction: column;
+                gap: 32px;
+        }
+
+
+            .experience_blog > h3 {
+                font-family: "Arima";
+                    font-size: 40px;
+                    font-weight: 600;
+
+                color: var(--font-color-h1);
+            }
+
+
+        .seperator {
+            border: 1px solid rgba(61, 61, 61, 0.5);
+        }
+
+
+        .journey_blog {
+            display: flex;
+                flex-direction: column;
+                gap: 32px;
+
+            background-color: var(--background-color-biography);
+
+            border-radius: 40px;
+
+            padding: 12px 16px;
+        }
+
+
+            .journey_blog > h3 {
+                font-family: "Arima";
+                    font-size: 40px;
+                    font-weight: 600;
+
+                color: var(--font-color-h1);
+
+                text-align: center;
+            }
+
+
+            .journey_blog > span {
+                font-size: 18px;
+
+                color: var(--font-color-text);
+            }
+
+
+                .journey_start_calender {
+                    display: flex;
+                        justify-content: center;
+                        gap: 8px;
+                }
+
+
+    .concluding_text {
+        padding: 0px max(calc(50% - 720px), 120px);
+
+        margin-top: 88px;
+
+        font-size: 24px;
+
+        color: var(--font-color-text);
+    }
+
+
+
+
+
+    .concluding {
+        display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+        /* padding: 0px max(calc(50% - 720px), 120px); */
+
+        margin: 0 auto;
+        max-width: 1100px;
+    }
+
+
+        .concluding > p {
+            color: var(--font-color-introduction);
+        }
+
+
+        ul li {
+            color: var(--font-color-introduction);
+        }
+
+
+        li > a {
+            text-decoration: none;
+            font-weight: bold;
+
+            color: var(--font-color-title);
+        }
+
+
+
+        .pro_tipps {
+            display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+            color: var(--font-color-h1);
+            background-color: var(--font-color-title);
+
+            font-size: 26px;
+            font-weight: 700;
+
+            border-radius: 10px;
+            padding: 10px;
+
+            width: 180px;
+            transform: rotate(-14deg) translateY(30px) translateX(-65px);
+        }
+
+
+        .pro_tipps_list {
+            background-color: var(--background-color-biography);
+
+            border-radius: 30px;
+            padding: 26px 16px;
+
+            font-size: 24px;
+        }
+
+
+
+
+    .sharing {
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        color: var(--font-color-introduction);
+        
+        font-size: 24px;
+  
+      margin-top: 56px;
+      margin-bottom: 48px;
+    }
+
+
+        .sharing > p {
+            font-family: "Arima";
+                font-weight: 500;
+
+            text-align: center;
+  
+            width: 500px;
+        }
+
+
+    .arrow_big {
+        height: 65px;
+  
+        transform: translateX(-150px) translateY(25px) scaleX(1.2) scaleY(1.2);
+    }
+
+
+    .arrow_small {
+        display: none;
+  
+        transform: translateX(-125px) translateY(20px);
+
+    }
+
+
+    .share_button {
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+        background-color: var(--font-color-title);
+        color: var(--font-color-h1);
+
+        padding: 8px 24px;
+        border-radius: 40px;
+    }
+
+
+        .share_button > p {
+            font-family: "Arima";
+                font-weight: 700;
+        }
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1441px) and (max-width: 1600px) {
+
+    .concluding {
+        margin: 0 auto;
+        max-width: 1400px;
+    }
+    
+}
+
+
+@media screen and (min-width: 1601px) and (max-width: 1700px) {
+
+    .concluding {
+        margin: 0 auto;
+        max-width: 1600px;
+    }
+    
+}
+
+
+@media screen and (min-width: 1701px) and (max-width: 1920px) {
+
+    .concluding {
+        margin: 0 auto;
+        max-width: 1750px;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 1441px) {
+
+    .headline {
+        padding: 48px max(calc(50% - 720px), 120px);
+    }
+
+
+        .preface {
+            padding: 0px max(calc(50% - 720px), 120px);
+        }
+
+
+        .concluding {
+            padding: 0px max(calc(50% - 720px), 120px);
+        }
+
+}
+
+
+
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
+
+        .headline {
+            padding: 48px max(calc(50% - 720px), 64px);
+        }
+
+
+            .introduction > h3 {
+                font-size: 20px;
+            }
+
+
+            .introduction > h2 {
+                font-size: 40px;
+            }
+
+
+            .introduction > p {
+                font-size: 18px;
+            }
+
+
+                .website_data, .first_data_block, .second_data_block {
+                    gap: 16px;
+                }
+
+
+                    .author_tamara > h2, h3 {
+                        font-size: 16px;
+                    }
+
+
+                    .preface {
+                        padding: 0px max(calc(50% - 720px), 64px);
+                    }
+
+
+                        .preface > p {
+                            font-size: 16px;
+                        }
+
+
+        .fuji_img > img {
+            width: 950px;
+        }
+
+
+            .information_links {
+                max-width: 800px;
+            }
+
+
+                .information_links > a {
+                    font-size: 18px;
+                }
+
+
+            .information_table {
+                max-width: 750px;
+            }
+
+
+                .information_table th {
+                    font-size: 18px;
+                }
+
+
+                .information_table td {
+                    font-size: 16px;
+                }
+
+
+        .blog_article {
+            padding: 0px max(calc(50% - 720px), 64px);
+
+            font-size: 18px;
+        }
+
+
+            .experience_blog, .journey_blog {
+                gap: 16px;
+            }
+
+
+                .experience_blog > h3, .journey_blog > h3 {
+                    font-size: 20px;
+                }
+
+
+                .journey_blog > span {
+                    font-size: 16px;
+                }
+
+
+        .concluding_text {
+            padding: 0px max(calc(50% - 720px), 64px);
+
+            font-size: 18px;
+        }
+
+
+
+
+        .concluding {
+            max-width: 800px;
+        }
+
+
+            .sharing > p {
+                font-size: 18px;
+            }
+
+    }
+
+
+         @media screen and (min-width: 768px) and (max-width: 1080px) {
+
+            .fuji_img > img {
+                width: 750px;
+            }
+
+         }
+
+
+        @media screen and (min-width: 768px) and (max-width: 995px) {
+           
+            .website_data {
+                flex-direction: column;
+            }
+        }
+
+
+        @media screen and (min-width: 768px) and (max-width: 850px) {
+           
+            .fuji_img > img {
+                width: 675px;
+            }
+        }
+
+
+
+        @media screen and (min-width: 768px) and (max-width: 780px) {
+ 
+            .first_data_block {
+                flex-direction: column;
+            }
+
+            .second_data_block {
+                flex-direction: column;
+            }
+        }
+
+
+
+
+            @media screen and (max-width: 767px) {
+
+                .headline {
+                    flex-direction: column;
+                    gap: 24px;
+
+                    padding: 24px max(calc(50% - 720px), 16px) 40px max(calc(50% - 720px), 16px);
+                }
+
+
+                    .introduction {
+                        align-items: center;
+                    }
+
+
+                        .introduction > h3 {
+                            font-size: 20px;
+                        }
+
+
+                        .introduction > h2 {
+                            font-size: 40px;
+                        }
+
+
+                        .introduction > p {
+                            font-size: 18px;
+                        }
+
+
+                            .website_data {
+                                flex-direction: column;
+                                gap: 8px;
+
+                                font-size: 12px;
+    
+                                padding-top: 16px;
+                            }
+
+
+                                .first_data_block, .second_data_block {
+                                    gap: 16px;
+                                }
+
+
+                            .author_tamara {
+                                width: unset;
+                            }
+
+
+                                .author_tamara > h2, h3 {
+                                    font-size: 16px;
+                                }
+
+
+                            .preface {
+                                padding: 0px max(calc(50% - 720px), 16px);
+                            }
+
+
+                                .preface > p {
+                                    font-size: 16px;
+                                }
+
+
+
+                    .fuji_img > img {
+                        width: 600px;
+                    }
+
+
+                        .information_links > a {
+                            font-size: 14px;
+                        }
+
+
+                        .information_table {
+                            display: flex;
+                            flex-direction: column;
+
+                            max-width: 450px;
+                            overflow-x: auto;
+                        }
+
+
+                            .information_table th {
+                                font-size: 18px;
+                            }
+
+
+                            .information_table td {
+                                font-size: 16px;
+                            }
+
+
+                        .blog_article {
+                            padding: 0px max(calc(50% - 720px), 16px);
+
+                            font-size: 18px;
+
+                            flex-direction: column;
+                        }
+
+
+                            .experience_blog, .journey_blog {
+                                gap: 16px;
+                            }
+
+
+                            .experience_blog > h3, .journey_blog > h3 {
+                                font-size: 20px;
+                            }
+
+
+                            .journey_blog > span {
+                                font-size: 16px;
+                            }
+
+
+                        .concluding_text {
+                            padding: 0px max(calc(50% - 720px), 16px);
+
+                            font-size: 18px;
+                        }
+
+
+                    .concluding {
+                        max-width: 450px;
+                    }
+
+
+                    .pro_tipps {
+                        transform: rotate(-14deg) translateX(10px) translateY(30px);
+                    }
+
+                        .arrow_big {
+                            display: none;
+                        }
+
+                        .arrow_small {
+                            display: unset;
+                        }
+
+                        .sharing {
+                            margin-top: 8px;
+                        }
+
+                        .sharing > p {
+                            width: unset;
+                            font-size: 18px;
+                        }
+            }
+
+
+
+                @media screen and (min-width: 660px) and (max-width: 767px) {
+
+                    .fuji_img > img {
+                        width: 600px;
+                    }
+
+                }
+
+
+                @media screen and (min-width: 600px) and (max-width: 660px) {
+
+                    .fuji_img > img {
+                        width: 550px;
+                    }
+
+                }
+
+
+                @media screen and (min-width: 550px) and (max-width: 600px) {
+
+                    .fuji_img > img {
+                        width: 500px;
+                    }
+
+
+                    .information_links {
+                        flex-direction: column;
+                        gap: 12px;
+                    }
+
+                }
+
+
+                @media screen and (min-width: 360px) and (max-width: 550px) {
+
+                    .fuji_img > img {
+                        width: 330px;
+                    }
+
+
+                    .information_links {
+                        flex-direction: column;
+                        gap: 12px;
+                    }
+
+
+                    .information_table {
+                        display: flex;
+                            flex-direction: column;
+
+                        max-width: 350px;
+                        overflow-x: auto;
+                    }
+
+                }
+    

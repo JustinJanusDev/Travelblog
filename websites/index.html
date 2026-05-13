@@ -7,7 +7,7 @@
 
     <title>Travelblog</title>
 
-    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="../styles/general_settings/variables.css">
     <link rel="stylesheet" href="../styles/website_styles/style.css">
     <link rel="stylesheet" href="../styles/general_settings/fonts.css">
     <link rel="stylesheet" href="../styles/website_styles/style.css">
@@ -22,9 +22,9 @@
             <div id="topMain" class="header">
                 <img src="../assets/icons/header/logo 03 1.png" alt="hae">
                 <div class="navBar">
-                    <a href="" class="linkHighlights">Highlights</a>
-                    <a href="" class="linkFaq">FAQ</a>
-                    <a href="" class="linkContact">Contact</a>
+                    <a href="#highlights" class="linkHighlights">Highlights</a>
+                    <a href="#faq" class="linkFaq">FAQ</a>
+                    <a href="#contact" class="linkContact">Contact</a>
                 </div>
             </div>
             <div class="headerTransform">
@@ -46,12 +46,64 @@
                     </div>
 
                 </div> -->
+                <div class="hero">
+        <div class="text">
+          <h1>Cappadocia</h1>
+          <span>
+            From sunrise balloons to<br />
+            hidden cave dwellings, every moment feels unrea<br />
+            in the best way.
+          </span>
+
+          <div class="circle">
+
+        <div class="rotating-text">
+          <svg viewBox="0 0 200 200">
+
+            <path
+              id="curve"
+              d="
+                M 100,100
+                m -65,0
+                a 65,65 0 1,1 130,0
+                a 65,65 0 1,1 -130,0
+              "
+            />
+
+            <text>
+              <textPath href="#curve">
+                CAPPADOCIA • TURKEY • CAPPADOCIA •
+              </textPath>
+            </text>
+
+          </svg>
+        </div>
+
+        <div class="flag"></div>
+
+      </div>
+        </div>
+        <div class="animation">
+          <div class="vector">
+          
+          </div>
+          
+          <div class="vector1">
+        
+
+          </div>
+        </div>
+          <div class="vector2">
+
+          </div>
+        </div>
+    </div>
             </div>
         </div>
     </header>
     <mainContent class="mainContent">
         <div class="highlights">
-            <div class="highlightsHeadline">
+            <div id=highlights class="highlightsHeadline">
                 <img src="../assets/icons/landing_page/rocket_launch (1).png" alt="">
                 <h2>Highlights</h2>
             </div>
@@ -123,9 +175,9 @@
 
 
 
-       <!--  <section>
+        <section>
 
-            <div class="faq-title">
+            <div id=faq class="faq-title">
                 <img src="../assets/icons/landing_page/live_help.svg" alt="">
 
                 <h2>FAQ</h2>
@@ -210,11 +262,11 @@
                 </details>
 
             </div>
-        </section> -->
+        </section>
 
 
-        <!-- <section>
-            <div class="contact-section">
+        <section>
+            <div id=contact class="contact-section">
                 <div class="contact-title contact-fields">
                     <img src="../assets/icons/landing_page/person_pin.svg" alt="">
 
@@ -269,7 +321,7 @@
                     <button>Send</button>
                 </div>
             </div>
-        </section> -->
+        </section>
 
 
     </mainContent>
