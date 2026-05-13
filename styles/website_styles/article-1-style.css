@@ -97,21 +97,21 @@
   gap: 8px;
 }
 
-.headlines > h2 {
+.headlines>h2 {
   font-family: "Palanquin";
   font-size: 40px;
   color: var(--font-color-title);
   font-weight: 600;
 }
 
-.headlines > h3 {
+.headlines>h3 {
   font-size: 64px;
   color: var(--font-color-h1);
   font-family: "Arima";
   font-weight: 700;
 }
 
-.headlines > p {
+.headlines>p {
   font-size: 32px;
   color: var(--font-color-introduction);
   font-family: "Palanquin";
@@ -152,7 +152,7 @@
   align-items: center;
 }
 
-.calendar > img {
+.calendar>img {
   height: 18px;
 }
 
@@ -161,7 +161,7 @@
   align-items: center;
 }
 
-.glasses > img {
+.glasses>img {
   height: 7px;
 }
 
@@ -170,7 +170,7 @@
   align-items: center;
 }
 
-.eyes > img {
+.eyes>img {
   height: 14px;
 }
 
@@ -179,7 +179,7 @@
   align-items: center;
 }
 
-.share_green > img {
+.share_green>img {
   height: 18px;
 }
 
@@ -196,25 +196,25 @@
   max-width: 32ch;
 }
 
-.author_info > img {
+.author_info>img {
   width: 120px;
   margin-bottom: 16px;
 }
 
-.author_info > h2 {
+.author_info>h2 {
   font-size: 18px;
   font-family: "Arima";
   font-weight: 700;
 }
 
-.author_info > h3 {
+.author_info>h3 {
   font-size: 18px;
   font-family: "Arima";
   margin-bottom: 12px;
   font-weight: 400;
 }
 
-.author_info > p {
+.author_info>p {
   font-size: 16px;
   font-family: "Palanquin";
   font-weight: 400;
@@ -230,7 +230,7 @@ main {
   padding-top: 88px;
 }
 
-main > h4 {
+main>h4 {
   font-size: 32px;
   font-family: "Arima";
   font-weight: bold;
@@ -302,7 +302,7 @@ main > h4 {
   z-index: 10;
 }
 
-.slider_beach_element:hover ~ .slider_beach_element {
+.slider_beach_element:hover~.slider_beach_element {
   transform: perspective(120px) rotateY(-2deg) translateX(120px);
   transform-origin: 50% 50%;
 }
@@ -318,7 +318,7 @@ ol li {
   color: var(--font-color-text);
 }
 
-li > a {
+li>a {
   text-decoration: none;
   font-family: "Palanquin";
   font-weight: 700;
@@ -371,7 +371,7 @@ li > a {
   font-size: 24px;
 }
 
-.sharing > p {
+.sharing>p {
   text-align: center;
   font-family: "Arima";
   font-weight: 500;
@@ -399,7 +399,7 @@ li > a {
   color: var(--font-color-h1);
 }
 
-.share_button > p {
+.share_button>p {
   font-family: "Arima";
   font-weight: 700;
 }
@@ -502,15 +502,15 @@ li > a {
     max-width: calc(100% - 40px);
   }
 
-  .headlines > h2 {
+  .headlines>h2 {
     font-size: 20px;
   }
 
-  .headlines > h3 {
+  .headlines>h3 {
     font-size: 40px;
   }
 
-  .headlines > p {
+  .headlines>p {
     font-size: 18px;
   }
 
@@ -526,11 +526,11 @@ li > a {
     gap: 16px;
   }
 
-  .author_info > h2 {
+  .author_info>h2 {
     font-size: 16px;
   }
 
-  .author_info > h3 {
+  .author_info>h3 {
     font-size: 16px;
   }
 
@@ -551,7 +551,7 @@ li > a {
     padding: 0px max(calc(50% - 720px), 64px);
   }
 
-  .sharing > p {
+  .sharing>p {
     font-size: 18px;
   }
 }
@@ -562,9 +562,12 @@ li > a {
   }
 
   .headlines {
-  padding: 0px max(calc(50% - 720px), 16px);
-}
+    padding: 0px max(calc(50% - 720px), 16px);
+  }
 
+  .footerLeft {
+    gap: 68px;
+  }
 
 }
 
@@ -600,15 +603,15 @@ li > a {
     align-items: center;
   }
 
-  .headlines > h2 {
+  .headlines>h2 {
     font-size: 20px;
   }
 
-  .headlines > h3 {
+  .headlines>h3 {
     font-size: 40px;
   }
 
-  .headlines > p {
+  .headlines>p {
     font-size: 18px;
   }
 
@@ -631,11 +634,11 @@ li > a {
     max-width: unset;
   }
 
-  .author_info > h2 {
+  .author_info>h2 {
     font-size: 16px;
   }
 
-  .author_info > h3 {
+  .author_info>h3 {
     font-size: 16px;
   }
 
@@ -643,7 +646,7 @@ li > a {
     padding-top: 16px;
   }
 
-  main > h4 {
+  main>h4 {
     font-size: 20px;
   }
 
@@ -680,7 +683,7 @@ li > a {
     padding: 0px max(calc(50% - 720px), 16px);
   }
 
-  .teaser > p {
+  .teaser>p {
     font-size: 16px;
   }
 
@@ -696,11 +699,11 @@ li > a {
     margin-top: 8px;
   }
 
-  .sharing > p {
+  .sharing>p {
     width: unset;
     font-size: 18px;
   }
-} 
+}
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
   .header {
@@ -717,13 +720,13 @@ li > a {
     display: none;
   }
 
-.headlines {
-  padding: 0px max(calc(50% - 720px), 16px);
-}
+  .headlines {
+    padding: 0px max(calc(50% - 720px), 16px);
+  }
 
-.author_info{
-  margin: 0px max(calc(50% - 720px), 16px);
-}
+  .author_info {
+    margin: 0px max(calc(50% - 720px), 16px);
+  }
 
   .proTipps {
     transform: rotate(-12deg) translateX(-120px) translateY(-32px);

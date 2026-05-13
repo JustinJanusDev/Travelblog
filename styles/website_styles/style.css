@@ -58,6 +58,8 @@ body {
     position: relative;
     text-decoration: none;
     font-size: 1.5rem;
+    font-family: 'Arima';
+    font-weight: 700;
     color: #F8F5EB;
 }
 
@@ -71,6 +73,7 @@ body {
     max-width: 1440px;
     display: block;
 } */
+ 
 .hero {
     margin: 0;
     padding: 0;
@@ -285,7 +288,7 @@ h1 {
     }
 }
 
-span {
+.text span {
     margin: 0;
     padding: 0;
 
@@ -1048,7 +1051,7 @@ button {
 .footerLeft {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 72px;
 }
 
 .copyright {
@@ -1282,5 +1285,9 @@ button {
     .footerInner {
         width: 100%;
         max-width: calc(100% - 40px);
+    }
+
+    .footerLeft {
+        gap: 68px;
     }
 }
