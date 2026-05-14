@@ -689,11 +689,11 @@ main h2 {
         margin: 0;
     }
 
-    .arrow_big {
+    .arrowBig {
         display: none;
     }
 
-    .arrow_small {
+    .arrowSmall {
         display: unset;
     }
 
