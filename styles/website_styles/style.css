@@ -8,6 +8,7 @@
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 /* @keyframes slideInRight{
@@ -818,7 +819,8 @@ input[type="radio"] {
 
 summary {
     list-style: none;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
 
     display: flex;
     justify-content: space-between;
@@ -841,7 +843,8 @@ summary {
 
 
 details:open {
-    width: 1230px;
+    max-width: 1230px;
+    width: 100%;
 }
 
 
@@ -1118,6 +1121,57 @@ button {
         background-color: #F1C953;
         height: 88px;
     } */
+    .highlights h2{
+        font-size: 32px;
+    }
+
+
+
+    /* .faqSection{
+        max-width: 100%;
+        max-width: calc(100% - 40px);
+    } */
+    .faq-title>h2 {
+        font-size: 32px;
+    }
+    .contactForm{
+        width: 100%;
+        max-width: calc(100% - 40px);
+        margin: auto 20px auto 20px;
+    }
+
+    .name{
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .formular-box{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        gap: 32px;
+        padding: 0px;
+    }
+
+    .formular-information{
+        display: none;
+    }
+
+    .contact-title>h2{
+        font-size: 32px;
+    }
+
+    .support{
+        width: 100%;
+        margin: 0;
+    }
+
+    .e-mail{
+        width: 100%;
+        margin: 0;
+        padding: 0px;
+    }
 
     .footer {
         margin-bottom: 88px;
