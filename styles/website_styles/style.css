@@ -718,20 +718,14 @@ input[type="radio"] {
 }
 
 .sliderCoverBox {
-  width: 100%;
-  max-width: 881px;
-  height: 229px;
+  /* width: 100%; */
+  width: clamp(260px, 80vw, 881px);
+  /* min-height: clamp(80px, 25vh, 229px); */
+  max-height: 229px;
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
   border-left: 0.5px solid rgba(255, 255, 255, 0.7);
   border-right: 0.5px solid rgba(255, 255, 255, 0.7);
-    width: 100%;
-    max-width: 881px;
-    min-height: 229px;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-left: 0.5px solid rgba(255, 255, 255, 0.7);
-    border-right: 0.5px solid rgba(255, 255, 255, 0.7);
 
   display: flex;
   flex-direction: column;
@@ -744,18 +738,19 @@ input[type="radio"] {
   /* (38px) */
   right: 5%;
   max-width: calc(100% - 10%);
-  padding: 16px 24px;
+  padding: clamp(12px, 2vw, 24px);
 }
 
 .sliderCoverBox h3 {
   font-family: "Palanquin-Dark";
-  font-size: 48px;
+  font-size: clamp(16px, 4vw, 48px);
   line-height: 1;
 }
 
 .sliderCoverBox p {
   font-family: "Palanquin";
-  font-size: 28px;
+  font-size: clamp(16px, 3vw, 28px);
+  /* font-size: 28px; */
   line-height: 1.2;
 }
 
@@ -1087,19 +1082,19 @@ button {
     max-width: 100%;
   }
 
-  .sliderCoverBox h3 {
+  /* .sliderCoverBox h3 {
     font-size: 28px;
-  }
+  } */
 
-  .sliderCoverBox p {
+  /* .sliderCoverBox p {
     font-size: 20px;
-  }
+  } */
 
   .sliderCoverBox {
     top: 93px;
     left: 14px;
     gap: 8px;
-    height: 240px;
+    /* height: 240px; */
   }
 
   p.stationary {
