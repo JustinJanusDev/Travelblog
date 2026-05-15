@@ -1271,6 +1271,18 @@ button {
         display: none;
     }
 
+    
+    .formular-box {
+        width: 530px;
+        flex-direction: column;
+        gap: 32px;
+        padding-bottom: 32px;
+    }
+
+    .support {
+        width: 530px;
+    }
+
     p.mobile {
         display: none;
     }
@@ -1364,6 +1376,17 @@ button {
         margin: auto 20px auto 20px;
         /* margin: 0px 64px 0px 64px; */
         /* padding: 0px max(calc(50% - 720px), 12px); */
+    }
+
+    .formular-box {
+        width: 530px;
+        flex-direction: column;
+        gap: 32px;
+        padding-bottom: 32px;
+    }
+
+    .support {
+        width: 530px;
     }
 
     .footerInner {
