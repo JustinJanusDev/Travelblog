@@ -805,56 +805,24 @@ li > a {
   #s4:checked ~ .sliderMobileWrapper .elementFour,
   #s5:checked ~ .sliderMobileWrapper .elementFive {
     transform: perspective(120px) rotateY(0deg) scale(1.1);
-    transform-origin: 50% 50%;  
-    position: absolute;
-    left: 50%;
-
-    z-index: 10;
+    z-index: 1;
   }
 
-
-
-  #s1:checked ~ .sliderMobileWrapper .elementOne ~ .sliderAElement {
-    transform: perspective(120px) rotateY(-5deg) translateX(160px);
-    transform-origin: 50% 50%;
-  }
-  #s2:checked ~ .sliderMobileWrapper .elementTwo ~ .sliderAElement {
-    transform: perspective(120px) rotateY(-5deg) translateX(160px);
-    transform-origin: 50% 50%;
-  }
-  #s3:checked ~ .sliderMobileWrapper .elementThree ~ .sliderAElement {
-    transform: perspective(120px) rotateY(-5deg) translateX(160px);
-    transform-origin: 50% 50%;
-  }
-  #s4:checked ~ .sliderMobileWrapper .elementFour ~ .sliderAElement {
-    transform: perspective(120px) rotateY(-5deg) translateX(160px);
-    transform-origin: 50% 50%;
-  }
+  #s1:checked ~ .sliderMobileWrapper .elementOne ~ .sliderAElement,
+  #s2:checked ~ .sliderMobileWrapper .elementTwo ~ .sliderAElement,
+  #s3:checked ~ .sliderMobileWrapper .elementThree ~ .sliderAElement,
+  #s4:checked ~ .sliderMobileWrapper .elementFour ~ .sliderAElement,
   #s5:checked ~ .sliderMobileWrapper .elementFive ~ .sliderAElement {
-    transform: perspective(120px) rotateY(-5deg) translateX(160px);
+    transform: perspective(120px) rotateY(-5deg) translateX(120px);
     transform-origin: 50% 50%;
   }
 
-
-
-  #s1:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementOne) {
-    transform: perspective(120px) rotateY(5deg) translateX(-160px);
-    transform-origin: 50% 50%;
-  }
-  #s2:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementTwo) {
-    transform: perspective(120px) rotateY(5deg) translateX(-160px);
-    transform-origin: 50% 50%;
-  }
-  #s3:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementThree) {
-    transform: perspective(120px) rotateY(5deg) translateX(-160px);
-    transform-origin: 50% 50%;
-  }
-  #s4:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementFour) {
-    transform: perspective(120px) rotateY(5deg) translateX(-160px);
-    transform-origin: 50% 50%;
-  }
+  #s1:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementOne),
+  #s2:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementTwo),
+  #s3:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementThree),
+  #s4:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementFour),
   #s5:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementFive) {
-    transform: perspective(120px) rotateY(5deg) translateX(-160px);
+    transform: perspective(120px) rotateY(5deg) translateX(-120px);
     transform-origin: 50% 50%;
   }
 }
