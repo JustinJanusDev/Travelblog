@@ -694,7 +694,7 @@ input[type="radio"] {
 }
 
 .elementFive {
-  background-image: url(../../assets/img/landing_page/DevAkaPlaceholder.jpg);
+  background-image: url(../../assets/img/landing_page/dubai_landinpage.jpg);
 }
 
 .sliderLandingPage input[value="one"]:checked ~ .sliderLandingPageWrapper {
@@ -725,6 +725,13 @@ input[type="radio"] {
   background-color: rgba(255, 255, 255, 0.1);
   border-left: 0.5px solid rgba(255, 255, 255, 0.7);
   border-right: 0.5px solid rgba(255, 255, 255, 0.7);
+    width: 100%;
+    max-width: 881px;
+    min-height: 229px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 0.5px solid rgba(255, 255, 255, 0.7);
+    border-right: 0.5px solid rgba(255, 255, 255, 0.7);
 
   display: flex;
   flex-direction: column;
@@ -1362,11 +1369,15 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .mainContent {
-    width: 100%;
-    max-width: 1200px;
-    align-items: center;
-  }
+    .mainContent {
+        width: 100%;
+        max-width: 1200px;
+        align-items: center;
+    }
+
+    p.mobile{
+        display: none;
+    }
 
   .footerInner {
     width: 100%;

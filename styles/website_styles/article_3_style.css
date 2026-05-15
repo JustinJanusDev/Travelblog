@@ -579,7 +579,7 @@ main h2 {
     body {
         padding-bottom: 88px;
     }
-
+    
     .headlineWrapper {
         width: 100%;
         display: flex;
@@ -763,7 +763,7 @@ main h2 {
     }
 
     .footer {
-        margin-bottom: 88px;
+        /* margin-bottom: 88px; */
         height: 120px;
     }
 
@@ -866,6 +866,22 @@ main h2 {
 }
 
 @media screen and (max-width: 480px) {
+    /* *{
+        outline: 1px solid red;
+    } */
+    
+    html, body {
+        height: 100%;
+    }
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 88px;
+    }
+
+    
     .header {
         height: 70px;
         justify-content: center;
@@ -926,6 +942,7 @@ main h2 {
     main {
         padding: 0px max(calc(50% - 512px), 24px);
         gap: 32px;
+        flex: 1;
     }
 
     main p {
@@ -941,7 +958,7 @@ main h2 {
     }
 
     .footer {
-        margin-bottom: 88px;
+        /* margin-bottom: 88px; */
         height: 120px;
         gap: 0;
     }
