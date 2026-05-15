@@ -450,6 +450,8 @@ main {
 
   position: relative;
   overflow: hidden;
+
+  border: 2px solid rgb(255, 255, 255); 
 }
 
 .khalifa > img {
@@ -505,6 +507,8 @@ main {
 
   position: relative;
   overflow: hidden;
+
+  border: 2px solid rgb(255, 255, 255); 
 }
 
 .jumerah > img {
@@ -560,6 +564,8 @@ main {
 
   position: relative;
   overflow: hidden;
+
+  border: 2px solid rgb(255, 255, 255); 
 }
 
 .ring > img {
@@ -615,6 +621,8 @@ main {
 
   position: relative;
   overflow: hidden;
+
+  border: 2px solid rgb(255, 255, 255); 
 }
 
 .desert > img {
@@ -693,6 +701,8 @@ main {
 
   position: relative;
   overflow: hidden;
+
+  border: 2px solid rgb(255, 255, 255); 
 }
 
 .beach > img {
@@ -779,8 +789,7 @@ main {
   border: none;
   border-radius: 2px;
 
-  border-color: rgb(255, 255, 255);
-  border-width: 2px solid;
+  border: 2px solid rgb(255, 255, 255); 
 
   object-fit: cover;
 }
