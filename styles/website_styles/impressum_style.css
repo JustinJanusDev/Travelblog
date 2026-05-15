@@ -113,19 +113,20 @@ header>h1 {
 section {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 32px;
     padding: 48px max(calc(50% - 720px), 120px);
 }
 
-section>h2 {
-    font-size: 48px;
+section h2, h3, h4 {
+    font-size: 32px;
     color: var(--font-color-h1);
     font-family: "Arima";
     font-weight: 700;
 }
 
-section>p {
-    font-size: 22px;
+section p {
+    font-size: 20px;
+    line-height: 125%;
     color: var(--font-color-introduction);
 }
 
@@ -220,11 +221,11 @@ section>p {
         padding: 48px max(calc(50% - 720px), 64px);
     }
 
-    section>h2 {
-        font-size: 36px;
+    section h2, h3, h4 {
+        font-size: 32px;
     }
 
-    section>p {
+    section p {
         font-size: 16px;
     }
 
@@ -238,13 +239,13 @@ section>p {
      section {
         padding: 48px max(calc(50% - 720px), 28px);
     }
-    section>h2{
+    section h2, h3, h4{
         font-size: 24px;
     }
     header>h1 {
         font-size: 28px;
     }
-    section>p {
+    section p {
         font-size: 16px;
     }
 }
