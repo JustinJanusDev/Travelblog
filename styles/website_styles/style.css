@@ -961,11 +961,22 @@ a {
 
 .policy a {
   color: rgb(78, 164, 135);
+  text-decoration: none;
+}
+
+.policy a:hover {
+    cursor: default;
+    text-shadow: 0 0 2px;
 }
 
 .policy input {
   accent-color: rgb(78, 164, 135);
 }
+
+.policy input:hover {
+    cursor: pointer;
+}
+
 
 .send-button {
   display: flex;
