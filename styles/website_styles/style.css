@@ -836,9 +836,22 @@ summary {
   font-weight: 500;
 }
 
-details:open {
+details[open] {
   max-width: 1230px;
   width: 100%;
+}
+
+.accordion::details-content {
+    block-size: 0;
+
+    transition-property: block-size, content-visibility;
+    transition-duration: 500ms;
+    transition-behavior: allow-discrete;
+}
+
+.accordion[open]::details-content {
+    block-size: auto;
+    block-size: calc-size(auto);
 }
 
 summary > img:hover {
@@ -849,7 +862,7 @@ summary > img:hover {
   width: 24px;
 }
 
-details:open .arrow-button {
+details[open] .arrow-button {
   transform: rotate(-180deg);
   transition-duration: 500ms;
 }
