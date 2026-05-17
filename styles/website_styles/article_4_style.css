@@ -600,6 +600,57 @@
 
 
 
+@media screen and (min-width: 1921px) and (max-width: 2299px) {
+
+    .concluding {
+        margin: 0 auto;
+        max-width: 2000px;
+    }
+    
+}
+
+
+@media screen and (min-width: 2300px) and (max-width: 3000px) {
+
+    .concluding {
+        margin: 0 auto;
+        max-width: 2700px;
+    }
+    
+}
+
+
+@media screen and (min-width: 3001px) and (max-width: 4000px) {
+
+    .concluding {
+        margin: 0 auto;
+        max-width: 3500px;
+    }
+    
+}
+
+
+@media screen and (min-width: 4001px) and (max-width: 4500px) {
+
+    .concluding {
+        margin: 0 auto;
+        max-width: 4000px;
+    }
+    
+}
+
+
+@media screen and (min-width: 4501px) and (max-width: 6000px) {
+
+    .concluding {
+        margin: 0 auto;
+        max-width: 4500px;
+    }
+    
+}
+
+
+
 @media screen and (min-width: 1441px) {
 
     .headline {
@@ -717,6 +768,11 @@
         .concluding_text {
             padding: 0px max(calc(50% - 720px), 64px);
 
+            font-size: 18px;
+        }
+
+
+        .pro_tipps_list {
             font-size: 18px;
         }
 
@@ -959,10 +1015,30 @@
 
 
 
+                @media screen and (min-width: 767px) and (max-width: 980px) {
+
+                    .concluding {
+                        width: 600px;
+                    }
+
+                }
+
+
+
                 @media screen and (min-width: 660px) and (max-width: 767px) {
 
                     .fuji_img > img {
                         width: 600px;
+                    }
+
+
+                    .pro_tipps_list {
+                        font-size: 18px;
+                    }
+
+
+                    .concluding {
+                        width: 750px;
                     }
 
                 }
@@ -972,6 +1048,16 @@
 
                     .fuji_img > img {
                         width: 550px;
+                    }
+
+
+                    .pro_tipps_list {
+                        font-size: 18px;
+                    }
+
+
+                    .concluding {
+                        width: 450px;
                     }
 
                 }
@@ -987,6 +1073,16 @@
                     .information_links {
                         flex-direction: column;
                         gap: 12px;
+                    }
+
+
+                    .pro_tipps_list {
+                        font-size: 18px;
+                    }
+
+
+                    .concluding {
+                        width: 400px;
                     }
 
                 }
@@ -1011,6 +1107,51 @@
 
                         max-width: 350px;
                         overflow-x: auto;
+                    }
+
+
+                    .pro_tipps_list {
+                        font-size: 18px;
+                    }
+
+
+                    .concluding {
+                        width: 300px;
+                    }
+
+                }
+
+
+
+                @media screen and (min-width: 320px) and (max-width: 360px) {
+
+                    .fuji_img > img {
+                        width: 300px;
+                    }
+
+
+                    .information_links {
+                        flex-direction: column;
+                        gap: 12px;
+                    }
+
+
+                    .information_table {
+                        display: flex;
+                            flex-direction: column;
+
+                        max-width: 350px;
+                        overflow-x: auto;
+                    }
+
+
+                    .concluding {
+                        max-width: 300px;
+                    }
+
+
+                    .pro_tipps_list {
+                        font-size: 18px;
                     }
 
                 }
