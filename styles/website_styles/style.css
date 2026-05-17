@@ -934,6 +934,11 @@ input {
   height: 32px;
 }
 
+input:focus {
+    outline-style: none;
+    box-shadow: none;
+}
+
 .policy {
   display: flex;
   justify-content: center;
