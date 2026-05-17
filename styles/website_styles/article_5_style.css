@@ -420,13 +420,12 @@ main {
   padding: 0;
 
   width: 1200px;
-  height: 900px;
+  height: auto;
 
   display: grid;
   grid-template-columns: repeat(4, 300px);
   grid-template-rows: repeat(3, 300px);
 
-  background-color: rgba(78, 164, 135, 0.2);
 }
 
 /*.dubaipics > img {
@@ -451,7 +450,7 @@ main {
   position: relative;
   overflow: hidden;
 
-  border: 2px solid rgb(255, 255, 255); 
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .khalifa > img {
@@ -508,7 +507,7 @@ main {
   position: relative;
   overflow: hidden;
 
-  border: 2px solid rgb(255, 255, 255); 
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .jumerah > img {
@@ -565,7 +564,7 @@ main {
   position: relative;
   overflow: hidden;
 
-  border: 2px solid rgb(255, 255, 255); 
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .ring > img {
@@ -622,7 +621,7 @@ main {
   position: relative;
   overflow: hidden;
 
-  border: 2px solid rgb(255, 255, 255); 
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .desert > img {
@@ -657,7 +656,7 @@ main {
   0% {
     opacity: 1;
   }
- 50% {
+  50% {
     opacity: 0;
   }
   100% {
@@ -702,7 +701,7 @@ main {
   position: relative;
   overflow: hidden;
 
-  border: 2px solid rgb(255, 255, 255); 
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .beach > img {
@@ -789,7 +788,7 @@ main {
   border: none;
   border-radius: 2px;
 
-  border: 2px solid rgb(255, 255, 255); 
+  border: 2px solid rgb(255, 255, 255);
 
   object-fit: cover;
 }
@@ -979,4 +978,402 @@ main {
   font-size: 24px;
   line-height: 120%;
   letter-spacing: 5%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .content_wrapper {
+    padding: 80px 32px;
+    gap: 32px;
+  }
+
+  .article_5,
+  .headline,
+  .description_dubai,
+  .text0305,
+  .teaser {
+    width: 100%;
+  }
+
+  .headline {
+    height: auto;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .ueberschrift,
+  .ueberschrift_text,
+  .h_bereich,
+  .h_bereich > h2,
+  .ueberschrift_text > p {
+    width: 100%;
+    height: auto;
+  }
+
+  .h_bereich > h3 {
+    width: 100%;
+    font-size: 32px;
+  }
+
+  .h_bereich > h2 {
+    font-size: 40px;
+  }
+
+  .ueberschrift_text > p,
+  .teaser,
+  .text0205,
+  .text0305,
+  .endlist > ol {
+    font-size: 18px;
+  }
+
+  .author_info {
+    width: 100%;
+    max-width: 345px;
+    height: auto;
+  }
+
+  .author_text,
+  .author_text > p {
+    width: 100%;
+    height: auto;
+    text-align: start;
+  }
+
+  .ueberschrift_info {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .dubaipics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    width: 100%;
+    height: auto;
+  }
+
+  .khalifa,
+  .jumerah,
+  .ring,
+  .desert,
+  .beach,
+  .video_container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .dubaipics > .khalifa {
+    grid-column: 1/ 1;
+    grid-row: 1 / 3;
+  }
+
+  .video_container {
+    grid-column: 2/ 4;
+    grid-row: 1/ 3;
+  }
+
+  .dubaipics > .jumerah {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+
+  .dubaipics > .ring {
+    grid-column: 3 / 3;
+    grid-row: 3 / 4;
+  }
+
+  .dubaipics > .beach {
+    grid-column: 1 / 2;
+    grid-row: 4 / 4;
+  }
+
+  .dubaipics > .desert {
+    grid-column: 2/ 4;
+    grid-row: 4/ 4;
+  }
+
+  .text0205,
+  .text0305 {
+    width: 100%;
+    height: auto;
+  }
+
+  .tipps,
+  .endlist {
+    width: 100%;
+    height: auto;
+  }
+
+  .endlist > ol {
+    width: 100%;
+    height: auto;
+  }
+
+  .light {
+    transform: rotate(-14deg) translateY(-80px) translateX(-420px) scale(0.9);
+  }
+
+  .sharing > p {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+  }
+
+  .arrow_big {
+    display: none;
+  }
+
+  .arrow_small {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .content_wrapper {
+    width: 100%;
+    height: auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 24px;
+    gap: 88px;
+  }
+
+  .article_5,
+  .headline,
+  .description_dubai,
+  .teaser,
+  .text0205,
+  .text0305,
+  .tipps,
+  .endlist {
+    width: 100%;
+    height: auto;
+    gap: 40px;
+  }
+
+  .headline {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    height: auto;
+  }
+
+  .ueberschrift,
+  .ueberschrift_text,
+  .h_bereich,
+  .h_bereich > h2,
+  .ueberschrift_text > p {
+    width: 100%;
+    height: auto;
+    gap: 8px;
+  }
+
+  .h_bereich > h3 {
+    width: 100%;
+    height: auto;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+  }
+
+  .h_bereich > h2 {
+    width: 100%;
+    height: auto;
+
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%;
+  }
+
+  .ueberschrift_text {
+    gap: 8px;
+  }
+
+  .ueberschrift_text > p,
+  .teaser,
+  .text0205,
+  .text0305 {
+    width: 100%;
+    height: auto;
+    gap: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  .ueberschrift_info {
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    align-items: start;
+
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .author_info {
+    width: 100%;
+    max-width: 345px;
+    height: auto;
+
+    text-align: center;
+    gap: 16px;
+    padding: 16px 8px 16px 8px;
+  }
+
+  .author_text,
+  .author_text > p,
+  .h_berreich1,
+  .h_berreich1 > h3 {
+    width: 100%;
+    height: auto;
+  }
+
+  .dubaipics {
+    width: 100%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+  }
+
+  .khalifa,
+  .jumerah,
+  .ring,
+  .desert,
+  .beach,
+  .video_container {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+  }
+
+  .khalifa {
+    height: 300px;
+  }
+
+  .video_container iframe,
+  .khalifa > img,
+  .jumerah > img,
+  .ring > img,
+  .desert > img,
+  .beach > img {
+    border-radius: 12px;
+  }
+
+  .khalifa p,
+  .jumerah p,
+  .ring p,
+  .desert p,
+  .beach p {
+    font-size: 20px;
+  }
+
+  .dubaipics >  .video_container {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .dubaipics > .khalifa {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .dubaipics > .jumerah {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .dubaipics > .ring {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .dubaipics > .desert {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+  }
+
+  .dubaipics > .beach {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .text0205,
+  .text0305 {
+    width: 100%;
+    height: auto;
+  }
+
+  .tipps,
+  .endlist {
+    width: 100%;
+    height: auto;
+  }
+
+  .light {
+    width: 195.92179187815535px;
+    height: 66px;
+
+    transform: rotate(-10deg) translateX(-100px) translateY(30px) scale(0.85);
+  }
+
+  .light > p {
+    font-size: 28px;
+  }
+
+  .light > img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .endlist {
+    padding: 24px 16px 24px 16px;
+    border-radius: 30px;
+  }
+
+  .endlist > ol,
+  .endlist > ol a {
+    width: 100%;
+    height: auto;
+
+    font-size: 18px;
+    line-height: 140%;
+  }
+
+  .sharing {
+    padding-top: 48px;
+  }
+
+  .sharing > p {
+    width: 100%;
+    height: auto;
+
+    font-size: 18px;
+  }
+
+  .share_button {
+    width: 145px;
+    height: 46px;
+  }
+
+  .share_button > p {
+    font-size: 20px;
+  }
+
+  .arrow_big {
+    display: none;
+  }
+
+  .arrow_small {
+    display: block;
+
+    transform: translateX(-60px) translateY(12px) scale(0.9);
+  }
 }
