@@ -761,6 +761,10 @@ input[type="radio"] {
   border: 3px solid black;
 }
 
+.faqSection{
+  width: 100%;
+}
+
 .faq-title {
   display: flex;
   justify-content: center;
@@ -790,6 +794,7 @@ input[type="radio"] {
 
   margin-top: 48px;
   margin-bottom: 56px;
+  /* width: 100%; */
 }
 
 .accordion {
@@ -801,6 +806,7 @@ input[type="radio"] {
   font-family: "Palanquin";
   font-size: 24px;
   font-weight: 600;
+  width: 100%;
 }
 
 summary {
