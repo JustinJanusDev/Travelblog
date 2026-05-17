@@ -340,6 +340,7 @@ li > a {
   justify-content: center;
   align-items: center;
   background-color: var(--font-color-title);
+  font-family: "Palanquin";
   color: var(--font-color-h1);
   font-weight: 700;
   font-size: 28px;
@@ -482,15 +483,11 @@ li > a {
 
 /* Responsive Design*/
 @media screen and (min-width: 1441px) {
-  html {
-    padding: 48px max(calc(50% - 720px), 120px);
-  }
-
-  .teaser {
+  .headline_art_one {
     padding: 0px max(calc(50% - 720px), 120px);
   }
 
-  .description {
+  .main {
     padding: 0px max(calc(50% - 720px), 120px);
   }
 }
@@ -568,20 +565,173 @@ li > a {
     padding: 0px max(calc(50% - 720px), 16px);
   }
 
+  .carousel {
+    display: none;
+  }
+
+  .slider_mobile {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 48px;
+
+    padding-left: 120px;
+    padding-right: 120px;
+    overflow: hidden;
+  }
+
+  .sliderMobileWrapper {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    transition: all 250ms ease-in-out;
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .sliderDots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+    gap: 8px;
+  }
+
+  .sliderDots label {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: rgba(78, 164, 135, 0.3);
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #s1:checked ~ .sliderDots label[for="s1"],
+  #s2:checked ~ .sliderDots label[for="s2"],
+  #s3:checked ~ .sliderDots label[for="s3"],
+  #s4:checked ~ .sliderDots label[for="s4"],
+  #s5:checked ~ .sliderDots label[for="s5"] {
+    width: 40px;
+    border-radius: 999px;
+    transform: scaleY(1);
+    background-color: rgba(78, 164, 135, 1);
+  }
+
+  .sliderAElement {
+    width: 200px;
+    height: 293px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: -9px 5px 20px 0px rgba(0, 0, 0, 0.25);
+    margin-left: -80px;
+
+    transform: perspective(120px) rotateY(-2deg);
+    transform-origin: 50% 50%;
+    transition: all 300ms ease-out;
+    z-index: 1;
+  }
+
+  .sliderAElement:first-child {
+    margin-left: 0;
+  }
+
+  #s1:checked ~ .sliderMobileWrapper .elementOne,
+  #s2:checked ~ .sliderMobileWrapper .elementTwo,
+  #s3:checked ~ .sliderMobileWrapper .elementThree,
+  #s4:checked ~ .sliderMobileWrapper .elementFour,
+  #s5:checked ~ .sliderMobileWrapper .elementFive {
+    transform: perspective(120px) rotateY(0deg);
+    z-index: 10;
+    opacity: 1;
+  }
+
+  #s1:checked ~ .sliderMobileWrapper .elementOne ~ .sliderAElement,
+  #s2:checked ~ .sliderMobileWrapper .elementTwo ~ .sliderAElement,
+  #s3:checked ~ .sliderMobileWrapper .elementThree ~ .sliderAElement,
+  #s4:checked ~ .sliderMobileWrapper .elementFour ~ .sliderAElement,
+  #s5:checked ~ .sliderMobileWrapper .elementFive ~ .sliderAElement {
+    transform: perspective(120px) rotateY(-5deg) translateX(120px) scale(0.9);
+    /* z-index: 1; */
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* nur das nächste Element rechts sichtbar lassen */
+  #s1:checked ~ .sliderMobileWrapper .elementOne + .sliderAElement,
+  #s2:checked ~ .sliderMobileWrapper .elementTwo + .sliderAElement,
+  #s3:checked ~ .sliderMobileWrapper .elementThree + .sliderAElement,
+  #s4:checked ~ .sliderMobileWrapper .elementFour + .sliderAElement {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 2;
+  }
+
+  #s1:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementOne),
+  #s2:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementTwo),
+  #s3:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementThree),
+  #s4:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementFour),
+  #s5:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementFive) {
+    transform: perspective(120px) rotateY(5deg) translateX(-120px) scale(0.9);
+    z-index: 1;
+
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* links: nur das DIREKT vorherige Element sichtbar lassen */
+  #s2:checked ~ .sliderMobileWrapper .sliderAElement:has(+ .elementTwo),
+  #s3:checked ~ .sliderMobileWrapper .sliderAElement:has(+ .elementThree),
+  #s4:checked ~ .sliderMobileWrapper .sliderAElement:has(+ .elementFour),
+  #s5:checked ~ .sliderMobileWrapper .sliderAElement:has(+ .elementFive) {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 2;
+  }
+
+  :root {
+    --step: 120px;
+  }
+
+  #s1:checked ~ .sliderMobileWrapper {
+    transform: translateX(calc(2 * var(--step)));
+  }
+  #s2:checked ~ .sliderMobileWrapper {
+    transform: translateX(calc(1 * var(--step)));
+  }
+  #s3:checked ~ .sliderMobileWrapper {
+    transform: translateX(0px);
+  }
+  #s4:checked ~ .sliderMobileWrapper {
+    transform: translateX(calc(-1 * var(--step)));
+  }
+  #s5:checked ~ .sliderMobileWrapper {
+    transform: translateX(calc(-2 * var(--step)));
+  }
+
+  .proTipps {
+    transform: rotate(-12deg) translateX(-300px) translateY(-50px);
+  }
+
   .footerLeft {
     gap: 68px;
   }
 }
-
-/* @media screen and (min-width: 768px) and (max-width: 780px) {
-  .info_blockone {
-    flex-direction: column;
-  }
-
-  .info_blocktwo {
-    flex-direction: column;
-  }
-} */
 
 @media screen and (min-width: 768px) {
   .footerInner {
@@ -672,7 +822,7 @@ li > a {
     padding: 0px max(calc(50% - 720px), 16px);
   }
 
-  main > h4{
+  main > h4 {
     font-size: 18px;
   }
 
@@ -682,7 +832,8 @@ li > a {
   }
 
   .proTipps {
-    transform: rotate(-12deg) translateX(-20px) translateY(-0px);
+    margin-top: 32px;
+    transform: rotate(-12deg) translateX(-150px) translateY(-0px);
   }
 
   .teaser {
@@ -724,6 +875,10 @@ li > a {
     justify-content: center;
     align-items: center;
     padding-bottom: 48px;
+
+    padding-left: 120px;
+    padding-right: 120px;
+    overflow: hidden;
   }
 
   .sliderMobileWrapper {
@@ -797,8 +952,9 @@ li > a {
   #s3:checked ~ .sliderMobileWrapper .elementThree,
   #s4:checked ~ .sliderMobileWrapper .elementFour,
   #s5:checked ~ .sliderMobileWrapper .elementFive {
-    transform: perspective(120px) rotateY(0deg) scale(1.1);
+    transform: perspective(120px) rotateY(0deg);
     z-index: 10;
+    opacity: 1;
   }
 
   #s1:checked ~ .sliderMobileWrapper .elementOne ~ .sliderAElement,
@@ -806,7 +962,19 @@ li > a {
   #s3:checked ~ .sliderMobileWrapper .elementThree ~ .sliderAElement,
   #s4:checked ~ .sliderMobileWrapper .elementFour ~ .sliderAElement,
   #s5:checked ~ .sliderMobileWrapper .elementFive ~ .sliderAElement {
-    transform: perspective(120px) rotateY(-5deg) translateX(120px);
+    transform: perspective(120px) rotateY(-5deg) translateX(120px) scale(0.9);
+    /* z-index: 1; */
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* nur das nächste Element rechts sichtbar lassen */
+  #s1:checked ~ .sliderMobileWrapper .elementOne + .sliderAElement,
+  #s2:checked ~ .sliderMobileWrapper .elementTwo + .sliderAElement,
+  #s3:checked ~ .sliderMobileWrapper .elementThree + .sliderAElement,
+  #s4:checked ~ .sliderMobileWrapper .elementFour + .sliderAElement {
+    opacity: 1;
+    pointer-events: auto;
     z-index: 2;
   }
 
@@ -815,19 +983,29 @@ li > a {
   #s3:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementThree),
   #s4:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementFour),
   #s5:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementFive) {
-    transform: perspective(120px) rotateY(5deg) translateX(-120px);
-    z-index: 2;
+    transform: perspective(120px) rotateY(5deg) translateX(-120px) scale(0.9);
+    z-index: 1;
   }
 
-  :root { --step: 120px; }
+  :root {
+    --step: 120px;
+  }
 
-  #s1:checked ~ .sliderMobileWrapper { transform: translateX(calc( 2 * var(--step))); }
-  #s2:checked ~ .sliderMobileWrapper { transform: translateX(calc( 1 * var(--step))); }
-  #s3:checked ~ .sliderMobileWrapper { transform: translateX(0px); }
-  #s4:checked ~ .sliderMobileWrapper { transform: translateX(calc(-1 * var(--step))); }
-  #s5:checked ~ .sliderMobileWrapper { transform: translateX(calc(-2 * var(--step))); }
-
-
+  #s1:checked ~ .sliderMobileWrapper {
+    transform: translateX(calc(2 * var(--step)));
+  }
+  #s2:checked ~ .sliderMobileWrapper {
+    transform: translateX(calc(1 * var(--step)));
+  }
+  #s3:checked ~ .sliderMobileWrapper {
+    transform: translateX(0px);
+  }
+  #s4:checked ~ .sliderMobileWrapper {
+    transform: translateX(calc(-1 * var(--step)));
+  }
+  #s5:checked ~ .sliderMobileWrapper {
+    transform: translateX(calc(-2 * var(--step)));
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -854,7 +1032,7 @@ li > a {
   }
 
   .proTipps {
-    transform: rotate(-12deg) translateX(-120px) translateY(-32px);
+    transform: rotate(-12deg) translateX(-250px) translateY(-48px);
   }
 
   .footer {
@@ -927,6 +1105,156 @@ li > a {
 
   .navBar {
     display: none;
+  }
+
+  .carousel {
+    display: none;
+  }
+
+  .slider_mobile {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 48px;
+
+    padding-left: 120px;
+    padding-right: 120px;
+    overflow: hidden;
+  }
+
+  .sliderMobileWrapper {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    transition: all 250ms ease-in-out;
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .sliderDots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+    gap: 8px;
+  }
+
+  .sliderDots label {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: rgba(78, 164, 135, 0.3);
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #s1:checked ~ .sliderDots label[for="s1"],
+  #s2:checked ~ .sliderDots label[for="s2"],
+  #s3:checked ~ .sliderDots label[for="s3"],
+  #s4:checked ~ .sliderDots label[for="s4"],
+  #s5:checked ~ .sliderDots label[for="s5"] {
+    width: 40px;
+    border-radius: 999px;
+    transform: scaleY(1);
+    background-color: rgba(78, 164, 135, 1);
+  }
+
+  .sliderAElement {
+    width: 200px;
+    height: 293px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: -9px 5px 20px 0px rgba(0, 0, 0, 0.25);
+    margin-left: -80px;
+
+    transform: perspective(120px) rotateY(-2deg);
+    transform-origin: 50% 50%;
+    transition: all 300ms ease-out;
+    z-index: 1;
+  }
+
+  .sliderAElement:first-child {
+    margin-left: 0;
+  }
+
+  #s1:checked ~ .sliderMobileWrapper .elementOne,
+  #s2:checked ~ .sliderMobileWrapper .elementTwo,
+  #s3:checked ~ .sliderMobileWrapper .elementThree,
+  #s4:checked ~ .sliderMobileWrapper .elementFour,
+  #s5:checked ~ .sliderMobileWrapper .elementFive {
+    transform: perspective(120px) rotateY(0deg);
+    z-index: 10;
+    opacity: 1;
+  }
+
+  #s1:checked ~ .sliderMobileWrapper .elementOne ~ .sliderAElement,
+  #s2:checked ~ .sliderMobileWrapper .elementTwo ~ .sliderAElement,
+  #s3:checked ~ .sliderMobileWrapper .elementThree ~ .sliderAElement,
+  #s4:checked ~ .sliderMobileWrapper .elementFour ~ .sliderAElement,
+  #s5:checked ~ .sliderMobileWrapper .elementFive ~ .sliderAElement {
+    transform: perspective(120px) rotateY(-5deg) translateX(80px) scale(0.9);
+    /* z-index: 1; */
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* nur das nächste Element rechts sichtbar lassen */
+  #s1:checked ~ .sliderMobileWrapper .elementOne + .sliderAElement,
+  #s2:checked ~ .sliderMobileWrapper .elementTwo + .sliderAElement,
+  #s3:checked ~ .sliderMobileWrapper .elementThree + .sliderAElement,
+  #s4:checked ~ .sliderMobileWrapper .elementFour + .sliderAElement {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 2;
+  }
+
+  #s1:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementOne),
+  #s2:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementTwo),
+  #s3:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementThree),
+  #s4:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementFour),
+  #s5:checked ~ .sliderMobileWrapper .sliderAElement:has(~ .elementFive) {
+    transform: perspective(120px) rotateY(5deg) translateX(-80px) scale(0.9);
+    z-index: 1;
+  }
+
+  :root {
+    --step: 120px;
+  }
+
+  #s1:checked ~ .sliderMobileWrapper {
+    transform: translateX(calc(2 * var(--step)));
+  }
+  #s2:checked ~ .sliderMobileWrapper {
+    transform: translateX(calc(1 * var(--step)));
+  }
+  #s3:checked ~ .sliderMobileWrapper {
+    transform: translateX(0px);
+  }
+  #s4:checked ~ .sliderMobileWrapper {
+    transform: translateX(calc(-1 * var(--step)));
+  }
+  #s5:checked ~ .sliderMobileWrapper {
+    transform: translateX(calc(-2 * var(--step)));
+  }
+
+  .proTipps {
+    transform: rotate(-12deg) translateX(-20px) translateY(0px);
   }
 
   .footer {
