@@ -958,7 +958,7 @@ main h2 {
     }
 
     .footer {
-        /* margin-bottom: 88px; */
+        margin-bottom: 88px;
         height: 120px;
         gap: 0;
     }
