@@ -1482,9 +1482,9 @@ button {
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .mainContent {
     width: 100%;
-    max-width: calc(100% - 40px);
+    max-width: calc(100% - 80px);
     align-items: center;
-    margin: auto 20px auto 20px;
+    margin: auto 40px auto 40px;
     /* margin: 0px 64px 0px 64px; */
     /* padding: 0px max(calc(50% - 720px), 12px); */
   }
@@ -1584,12 +1584,10 @@ button {
   } 
 
    .formular-box {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     margin: 0;
     gap: 32px;
-    padding: 0px;
+    padding-top: 56px;
   } 
 
   .support {
