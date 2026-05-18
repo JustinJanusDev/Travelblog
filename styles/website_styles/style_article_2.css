@@ -707,6 +707,11 @@ li>a {
     display: none;
   }
 
+  iframe {
+    width: 288px;
+    height: 165px;
+  }
+
   .footer {
     margin-bottom: 88px;
     height: 120px;
