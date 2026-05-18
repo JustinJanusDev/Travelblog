@@ -1171,6 +1171,7 @@ button {
   .faq-title > h2 {
     font-size: 32px;
   }
+
   .contactForm {
     width: 100%;
     max-width: calc(100% - 40px);
@@ -1342,6 +1343,10 @@ button {
     letter-spacing: 0%;
   }
 
+  .mainContent {
+    gap: 80px;
+  }
+
    .contactForm {
     width: 100%;
     max-width: calc(100% - 40px);
@@ -1354,12 +1359,14 @@ button {
     width: 100%;
     margin: 0;
     gap: 32px;
-    padding: 0px;
+    padding-top: 56px;
+    padding-bottom: 32px;
   } 
 
   .support {
     width: 100%;
     margin: 0;
+    padding-bottom: 22px;
   }
 
   .name {
